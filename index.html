@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Koodu Hostel — Men's & Ladies' Hostel in Kakkanad, Kochi | Food Included</title>
+<meta name="description" content="Affordable Men's & Ladies' Hostel in Mavelipuram, Kakkanad with homely food included. Near Infopark, SmartCity & CSEZ. Safe, hygienic, WiFi-ready. Book your bed today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FFFFFF;
+    --bg-soft:#F3F8F7;
+    --bg-soft-2:#EFF6FB;
+    --ink:#0B1F2A;
+    --ink-soft:#52697A;
+    --ink-faint:#8CA0AD;
+    --blue:#0B5FA5;
+    --blue-deep:#073B66;
+    --blue-soft:#E7F1FA;
+    --green:#1E9E6B;
+    --green-deep:#136B49;
+    --green-soft:#E1F6EC;
+    --gold:#E8A33D;
+    --line:#E4EBEC;
+    --radius-lg:28px;
+    --radius-md:18px;
+    --radius-sm:12px;
+    --shadow-sm:0 2px 10px rgba(11,31,42,0.06);
+    --shadow-md:0 12px 32px rgba(11,31,42,0.10);
+    --shadow-lg:0 24px 60px rgba(11,31,42,0.14);
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter', sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  ul{list-style:none;}
+  button{font-family:inherit; cursor:pointer; border:none;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 24px;}
+  .eyebrow{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12.5px;
+    font-weight:600;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--green-deep);
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+  }
+  .eyebrow::before{content:""; width:7px; height:7px; border-radius:50%; background:var(--green); display:inline-block;}
+  h1,h2,h3{font-family:'Fraunces', serif; line-height:1.08; letter-spacing:-0.01em; color:var(--blue-deep);}
+  h2{font-size:clamp(28px,4vw,42px); font-weight:600;}
+  h3{font-size:20px; font-weight:600;}
+  p{color:var(--ink-soft); line-height:1.65;}
+  .section{padding:88px 0;}
+  .section-soft{background:var(--bg-soft);}
+  .section-head{max-width:640px; margin-bottom:48px;}
+  .section-head.center{margin-left:auto; margin-right:auto; text-align:center;}
+  .section-head h2{margin-top:14px;}
+  .section-head p{margin-top:14px; font-size:16.5px;}
+
+  .reveal{opacity:0; transform:translateY(28px); transition:opacity .7s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1);}
+  .reveal.in{opacity:1; transform:translateY(0);}
+
+  /* Buttons */
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    padding:15px 28px; border-radius:100px; font-weight:700; font-size:15px;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+    white-space:nowrap;
+  }
+  .btn-primary{background:var(--green); color:#fff; box-shadow:0 10px 24px rgba(30,158,107,0.32);}
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 14px 30px rgba(30,158,107,0.4);}
+  .btn-outline{background:#fff; color:var(--blue-deep); border:1.5px solid var(--line); box-shadow:var(--shadow-sm);}
+  .btn-outline:hover{transform:translateY(-2px); border-color:var(--blue);}
+  .btn-light{background:rgba(255,255,255,0.16); color:#fff; border:1.5px solid rgba(255,255,255,0.5); backdrop-filter:blur(6px);}
+  .btn-light:hover{background:rgba(255,255,255,0.28);}
+  .btn-block{width:100%;}
+  .btn-sm{padding:11px 20px; font-size:13.5px;}
+
+  /* NAV */
+  header{
+    position:fixed; top:0; left:0; right:0; z-index:500;
+    background:rgba(255,255,255,0.85); backdrop-filter:blur(14px);
+    border-bottom:1px solid rgba(228,235,236,0);
+    transition:border-color .3s ease, box-shadow .3s ease, padding .3s ease;
+    padding:18px 0;
+  }
+  header.scrolled{border-bottom-color:var(--line); box-shadow:0 6px 24px rgba(11,31,42,0.05); padding:11px 0;}
+  .nav-row{display:flex; align-items:center; justify-content:space-between;}
+  .logo{display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:600; font-size:21px; color:var(--blue-deep);}
+  .logo-mark{
+    width:38px; height:38px; border-radius:11px;
+    background:linear-gradient(145deg, var(--blue), var(--green));
+    display:flex; align-items:center; justify-content:center;
+    color:#fff; font-size:17px; font-weight:700; font-family:'Fraunces',serif;
+    flex-shrink:0;
+  }
+  .logo span{font-size:11px; display:block; font-family:'Inter',sans-serif; font-weight:600; letter-spacing:0.06em; color:var(--ink-faint); text-transform:uppercase; margin-top:-2px;}
+  nav.links{display:flex; align-items:center; gap:30px;}
+  nav.links a{font-size:14.5px; font-weight:600; color:var(--ink-soft); transition:color .2s;}
+  nav.links a:hover{color:var(--blue);}
+  .nav-cta{display:flex; align-items:center; gap:14px;}
+  .nav-call{display:flex; align-items:center; gap:8px; font-weight:700; font-size:14.5px; color:var(--blue-deep);}
+  .burger{display:none; width:42px; height:42px; border-radius:10px; border:1.5px solid var(--line); background:#fff; align-items:center; justify-content:center; flex-direction:column; gap:4px;}
+  .burger span{width:18px; height:2px; background:var(--ink); border-radius:2px;}
+  .mobile-menu{display:none; position:fixed; inset:0; background:#fff; z-index:600; padding:24px; flex-direction:column; gap:6px;}
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{padding:16px 6px; font-size:18px; font-weight:600; border-bottom:1px solid var(--line); font-family:'Fraunces',serif; color:var(--blue-deep);}
+  .mobile-menu-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;}
+
+  /* HERO */
+  .hero{
+    position:relative; padding:148px 0 64px;
+    background:linear-gradient(180deg, var(--blue-soft) 0%, #fff 78%);
+    overflow:hidden;
+  }
+  .hero::before{
+    content:""; position:absolute; top:-180px; right:-160px; width:520px; height:520px; border-radius:50%;
+    background:radial-gradient(circle, rgba(30,158,107,0.16), transparent 70%);
+  }
+  .hero-grid{display:grid; grid-template-columns:1.05fr 0.95fr; gap:56px; align-items:center; position:relative;}
+  .hero-copy h1{font-size:clamp(34px,4.6vw,54px); font-weight:600;}
+  .hero-copy h1 em{font-style:italic; color:var(--green-deep); font-weight:500;}
+  .hero-copy .eyebrow{margin-bottom:18px;}
+  .hero-copy p.lead{font-size:18px; margin-top:18px; max-width:520px;}
+  .hero-actions{display:flex; gap:14px; margin-top:34px; flex-wrap:wrap;}
+  .badges{display:flex; flex-wrap:wrap; gap:10px; margin-top:38px;}
+  .badge{
+    display:flex; align-items:center; gap:8px; background:#fff; border:1px solid var(--line);
+    padding:9px 14px 9px 10px; border-radius:100px; font-size:13px; font-weight:600; color:var(--ink);
+    box-shadow:var(--shadow-sm);
+  }
+  .badge .dot{width:20px; height:20px; border-radius:50%; background:var(--green-soft); color:var(--green-deep); display:flex; align-items:center; justify-content:center; font-size:11px; flex-shrink:0;}
+
+  .hero-visual{position:relative;}
+  .hero-visual .frame{
+    border-radius:30px; overflow:hidden; box-shadow:var(--shadow-lg); position:relative; aspect-ratio:4/4.6;
+  }
+  .hero-visual .frame img{width:100%; height:100%; object-fit:cover;}
+  .float-card{
+    position:absolute; background:#fff; border-radius:18px; box-shadow:var(--shadow-md); padding:14px 18px;
+    display:flex; align-items:center; gap:12px;
+  }
+  .float-card.fc1{top:24px; left:-34px;}
+  .float-card.fc2{bottom:30px; right:-28px;}
+  .float-card .ic{width:42px; height:42px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:19px;}
+  .float-card.fc1 .ic{background:var(--green-soft);}
+  .float-card.fc2 .ic{background:var(--blue-soft);}
+  .float-card strong{display:block; font-size:14px; font-family:'Fraunces',serif; color:var(--blue-deep);}
+  .float-card small{font-size:12px; color:var(--ink-faint);}
+
+  /* COMMUTE LINE — signature element */
+  .commute{padding:64px 0 80px; background:#fff;}
+  .commute-head{display:flex; justify-content:space-between; align-items:flex-end; gap:24px; margin-bottom:46px; flex-wrap:wrap;}
+  .commute-rail{
+    position:relative; padding:34px 0 8px;
+    overflow-x:auto;
+    -ms-overflow-style:none; scrollbar-width:none;
+  }
+  .commute-rail::-webkit-scrollbar{display:none;}
+  .commute-track{
+    position:relative; display:flex; min-width:920px; padding:0 6px;
+  }
+  .commute-line-bg{
+    position:absolute; left:0; right:0; top:23px; height:3px;
+    background:repeating-linear-gradient(90deg, var(--line) 0 10px, transparent 10px 18px);
+  }
+  .commute-line-fill{
+    position:absolute; left:0; top:23px; height:3px; width:0%;
+    background:linear-gradient(90deg, var(--green), var(--blue));
+    transition:width 1.4s cubic-bezier(.22,1,.36,1);
+  }
+  .commute-rail.in .commute-line-fill{width:100%;}
+  .stop{flex:1; position:relative; text-align:center; padding-top:0;}
+  .stop .node{
+    width:18px; height:18px; border-radius:50%; background:#fff; border:3px solid var(--green);
+    margin:0 auto 16px; position:relative; z-index:2; transition:transform .3s ease;
+  }
+  .stop:first-child .node{width:24px; height:24px; border-color:var(--blue-deep); background:var(--blue-deep); box-shadow:0 0 0 6px var(--blue-soft);}
+  .stop:hover .node{transform:scale(1.25);}
+  .stop .time{font-family:'JetBrains Mono',monospace; font-weight:600; font-size:12.5px; color:var(--green-deep); background:var(--green-soft); border-radius:100px; padding:3px 10px; display:inline-block; margin-bottom:8px;}
+  .stop:first-child .time{background:var(--blue-soft); color:var(--blue-deep);}
+  .stop .name{font-weight:700; font-size:14.5px; color:var(--ink); display:block;}
+  .stop .name small{display:block; font-weight:500; font-size:12px; color:var(--ink-faint); margin-top:2px;}
+
+  /* WHY CHOOSE US */
+  .grid-cards{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .feature-card{
+    background:#fff; border:1px solid var(--line); border-radius:var(--radius-md); padding:30px 26px;
+    box-shadow:var(--shadow-sm); transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+  }
+  .feature-card:hover{transform:translateY(-6px); box-shadow:var(--shadow-md); border-color:transparent;}
+  .feature-card .ic{
+    width:50px; height:50px; border-radius:14px; display:flex; align-items:center; justify-content:center;
+    font-size:22px; margin-bottom:18px; background:var(--green-soft);
+  }
+  .feature-card:nth-child(3n-1) .ic{background:var(--blue-soft);}
+  .feature-card:nth-child(3n) .ic{background:#FCEEDD;}
+  .feature-card h3{margin-bottom:8px; font-size:18.5px;}
+  .feature-card p{font-size:14.5px;}
+
+  /* NEARBY */
+  .nearby-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px;}
+  .nearby-card{
+    background:#fff; border:1px solid var(--line); border-radius:var(--radius-sm); padding:20px;
+    text-align:center; transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .nearby-card:hover{transform:translateY(-4px); box-shadow:var(--shadow-sm);}
+  .nearby-card .pin{font-size:24px; margin-bottom:10px;}
+  .nearby-card strong{font-size:14px; display:block;}
+
+  /* ROOMS */
+  .room-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+  .room-card{
+    background:#fff; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--line);
+    box-shadow:var(--shadow-sm); display:flex; flex-direction:column; transition:transform .3s ease, box-shadow .3s ease;
+    position:relative;
+  }
+  .room-card:hover{transform:translateY(-8px); box-shadow:var(--shadow-lg);}
+  .room-card.popular{border:2px solid var(--green);}
+  .popular-tag{
+    position:absolute; top:18px; right:18px; background:var(--green); color:#fff; font-size:11.5px; font-weight:700;
+    padding:6px 12px; border-radius:100px; z-index:2; letter-spacing:0.03em;
+  }
+  .room-img{height:190px; overflow:hidden;}
+  .room-img img{width:100%; height:100%; object-fit:cover; transition:transform .5s ease;}
+  .room-card:hover .room-img img{transform:scale(1.07);}
+  .room-body{padding:26px 26px 28px; display:flex; flex-direction:column; flex:1;}
+  .room-body h3{margin-bottom:6px;}
+  .room-body > p{font-size:14px; margin-bottom:18px;}
+  .room-body .incl{flex:1; margin-bottom:22px;}
+  .room-body .incl li{display:flex; align-items:center; gap:9px; font-size:14px; color:var(--ink); padding:6px 0; border-bottom:1px dashed var(--line);}
+  .room-body .incl li:last-child{border-bottom:none;}
+  .room-body .incl li .chk{color:var(--green); font-weight:800;}
+
+  /* FOOD */
+  .food-grid{display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:center;}
+  .food-meals{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:30px;}
+  .meal-pill{
+    background:#fff; border:1px solid var(--line); border-radius:16px; padding:18px 12px; text-align:center; box-shadow:var(--shadow-sm);
+  }
+  .meal-pill .ic{font-size:22px; margin-bottom:8px;}
+  .meal-pill strong{font-size:14.5px; display:block;}
+  .food-points{margin-top:26px; display:flex; flex-direction:column; gap:12px;}
+  .food-points li{display:flex; gap:10px; font-size:14.5px; color:var(--ink-soft); align-items:flex-start;}
+  .food-points li::before{content:"✓"; color:var(--green); font-weight:800; flex-shrink:0;}
+  .food-visual{position:relative; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-lg); aspect-ratio:1/1;}
+  .food-visual img{width:100%; height:100%; object-fit:cover;}
+
+  /* FACILITIES */
+  .fac-grid{display:grid; grid-template-columns:repeat(6,1fr); gap:14px;}
+  .fac-item{
+    background:#fff; border:1px solid var(--line); border-radius:16px; padding:22px 14px; text-align:center;
+    transition:transform .25s ease, border-color .25s ease;
+  }
+  .fac-item:hover{transform:translateY(-4px); border-color:var(--green);}
+  .fac-item .ic{font-size:24px; margin-bottom:10px;}
+  .fac-item span{font-size:12.5px; font-weight:600; line-height:1.3; display:block;}
+
+  /* GALLERY */
+  .gallery-grid{
+    columns:4 220px; column-gap:14px;
+  }
+  .gallery-grid img{width:100%; border-radius:16px; margin-bottom:14px; box-shadow:var(--shadow-sm); transition:transform .35s ease;}
+  .gallery-grid img:hover{transform:scale(1.02);}
+
+  /* TESTIMONIALS */
+  .testi-row{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .testi-card{
+    background:#fff; border:1px solid var(--line); border-radius:var(--radius-md); padding:28px; box-shadow:var(--shadow-sm);
+  }
+  .stars{color:var(--gold); letter-spacing:2px; font-size:15px; margin-bottom:14px;}
+  .testi-card p{font-style:italic; color:var(--ink); font-size:15px; margin-bottom:18px;}
+  .testi-who{display:flex; align-items:center; gap:10px;}
+  .testi-avatar{width:38px; height:38px; border-radius:50%; background:var(--blue-soft); display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-weight:600; color:var(--blue-deep);}
+  .testi-who strong{font-size:13.5px; display:block;}
+  .testi-who span{font-size:12px; color:var(--ink-faint);}
+
+  /* FAQ */
+  .faq-list{max-width:760px; margin:0 auto;}
+  .faq-item{border-bottom:1px solid var(--line);}
+  .faq-q{display:flex; justify-content:space-between; align-items:center; padding:22px 4px; cursor:pointer; gap:20px;}
+  .faq-q h3{font-size:16.5px; font-weight:600; color:var(--ink);}
+  .faq-q .plus{font-size:20px; color:var(--green); flex-shrink:0; transition:transform .3s ease; font-family:'JetBrains Mono',monospace;}
+  .faq-item.open .plus{transform:rotate(45deg);}
+  .faq-a{max-height:0; overflow:hidden; transition:max-height .35s ease;}
+  .faq-a p{padding:0 4px 22px; font-size:14.5px; max-width:640px;}
+
+  /* BOOKING FORM */
+  .booking{
+    background:linear-gradient(160deg, var(--blue-deep), #0a5a8f);
+    border-radius:var(--radius-lg); padding:56px; display:grid; grid-template-columns:0.85fr 1.15fr; gap:48px; position:relative; overflow:hidden;
+  }
+  .booking::after{content:""; position:absolute; bottom:-120px; left:-80px; width:320px; height:320px; border-radius:50%; background:radial-gradient(circle, rgba(30,158,107,0.28), transparent 70%);}
+  .booking-info{position:relative; z-index:1;}
+  .booking-info .eyebrow{color:#9FE7C6;}
+  .booking-info .eyebrow::before{background:#9FE7C6;}
+  .booking-info h2{color:#fff;}
+  .booking-info p{color:rgba(255,255,255,0.78); margin-top:14px;}
+  .booking-trust{margin-top:30px; display:flex; flex-direction:column; gap:14px;}
+  .booking-trust li{display:flex; gap:12px; align-items:center; color:#fff; font-size:14px; font-weight:600;}
+  .booking-trust .ic{width:32px; height:32px; border-radius:9px; background:rgba(255,255,255,0.14); display:flex; align-items:center; justify-content:center; font-size:15px;}
+  .booking-form{background:#fff; border-radius:20px; padding:32px; position:relative; z-index:1;}
+  .form-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  .field{margin-bottom:16px;}
+  .field.full{grid-column:1/-1;}
+  .field label{display:block; font-size:12.5px; font-weight:700; color:var(--ink-soft); margin-bottom:7px; text-transform:uppercase; letter-spacing:0.04em;}
+  .field input, .field select, .field textarea{
+    width:100%; padding:12px 14px; border-radius:10px; border:1.5px solid var(--line); font-family:inherit; font-size:14.5px; color:var(--ink);
+    background:var(--bg-soft); transition:border-color .2s ease, background .2s ease;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{outline:none; border-color:var(--green); background:#fff;}
+  .radio-group{display:flex; gap:10px;}
+  .radio-group label{
+    flex:1; display:flex; align-items:center; justify-content:center; gap:6px; padding:11px; border-radius:10px;
+    border:1.5px solid var(--line); font-size:13.5px; font-weight:600; cursor:pointer; text-transform:none; color:var(--ink-soft);
+    transition:all .2s ease;
+  }
+  .radio-group input{display:none;}
+  .radio-group input:checked + span{color:var(--green-deep);}
+  .radio-group label:has(input:checked){border-color:var(--green); background:var(--green-soft); color:var(--green-deep);}
+  .form-note{font-size:12.5px; color:var(--ink-faint); text-align:center; margin-top:14px;}
+  .form-success{display:none; text-align:center; padding:30px 10px;}
+  .form-success .ic{width:56px; height:56px; border-radius:50%; background:var(--green-soft); color:var(--green-deep); display:flex; align-items:center; justify-content:center; font-size:26px; margin:0 auto 16px;}
+  .form-success h3{margin-bottom:8px;}
+
+  /* CONTACT */
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;}
+  .contact-list{display:flex; flex-direction:column; gap:18px; margin-top:26px;}
+  .contact-row{display:flex; align-items:center; gap:14px;}
+  .contact-row .ic{width:46px; height:46px; border-radius:13px; background:var(--green-soft); color:var(--green-deep); display:flex; align-items:center; justify-content:center; font-size:19px; flex-shrink:0;}
+  .contact-row strong{display:block; font-size:15px;}
+  .contact-row span{font-size:13.5px; color:var(--ink-faint);}
+  .map-frame{border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); aspect-ratio:4/3.2; position:relative;}
+  .map-frame img{width:100%; height:100%; object-fit:cover;}
+  .map-pin-overlay{position:absolute; inset:0; display:flex; align-items:center; justify-content:center;}
+  .map-pin-overlay .pulse{width:18px; height:18px; border-radius:50%; background:var(--blue-deep); position:relative; box-shadow:0 0 0 0 rgba(7,59,102,0.6); animation:pulse 2s infinite;}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(7,59,102,0.5);}70%{box-shadow:0 0 0 22px rgba(7,59,102,0);}100%{box-shadow:0 0 0 0 rgba(7,59,102,0);}}
+
+  /* FOOTER */
+  footer{background:var(--blue-deep); color:rgba(255,255,255,0.85); padding:64px 0 26px;}
+  .footer-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr 1.1fr; gap:40px; padding-bottom:40px; border-bottom:1px solid rgba(255,255,255,0.12);}
+  .footer-logo{display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-size:21px; font-weight:600; color:#fff; margin-bottom:14px;}
+  footer h4{font-size:13px; text-transform:uppercase; letter-spacing:0.06em; color:#9FE7C6; margin-bottom:16px; font-weight:700;}
+  footer ul{display:flex; flex-direction:column; gap:11px;}
+  footer ul a{font-size:14px; color:rgba(255,255,255,0.78); transition:color .2s;}
+  footer ul a:hover{color:#fff;}
+  .footer-bottom{display:flex; justify-content:space-between; align-items:center; padding-top:24px; font-size:13px; color:rgba(255,255,255,0.55); flex-wrap:wrap; gap:10px;}
+
+  /* FLOATING BUTTONS */
+  .floaters{position:fixed; right:22px; bottom:90px; z-index:400; display:flex; flex-direction:column; gap:14px;}
+  .float-btn{
+    width:54px; height:54px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:23px;
+    box-shadow:var(--shadow-md); color:#fff; transition:transform .2s ease;
+  }
+  .float-btn:hover{transform:scale(1.08);}
+  .float-btn.wa{background:#25D366;}
+  .float-btn.call{background:var(--blue);}
+
+  .sticky-mobile-cta{
+    display:none; position:fixed; bottom:0; left:0; right:0; z-index:450; background:#fff;
+    border-top:1px solid var(--line); padding:12px 16px; box-shadow:0 -8px 24px rgba(11,31,42,0.08);
+    align-items:center; gap:10px;
+  }
+  .sticky-mobile-cta a{flex:1;}
+
+  /* RESPONSIVE */
+  @media (max-width:1024px){
+    .grid-cards{grid-template-columns:repeat(2,1fr);}
+    .nearby-grid{grid-template-columns:repeat(3,1fr);}
+    .room-grid{grid-template-columns:repeat(2,1fr);}
+    .fac-grid{grid-template-columns:repeat(4,1fr);}
+    .testi-row{grid-template-columns:repeat(2,1fr);}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+    .booking{grid-template-columns:1fr; padding:40px;}
+  }
+  @media (max-width:760px){
+    .section{padding:62px 0;}
+    nav.links, .nav-call{display:none;}
+    .burger{display:flex;}
+    .hero{padding-top:118px;}
+    .hero-grid{grid-template-columns:1fr; gap:40px;}
+    .hero-visual{order:-1;}
+    .float-card{display:none;}
+    .grid-cards{grid-template-columns:1fr;}
+    .nearby-grid{grid-template-columns:repeat(2,1fr);}
+    .room-grid{grid-template-columns:1fr;}
+    .food-grid{grid-template-columns:1fr;}
+    .food-visual{order:-1;}
+    .fac-grid{grid-template-columns:repeat(3,1fr);}
+    .gallery-grid{columns:2 160px;}
+    .testi-row{grid-template-columns:1fr;}
+    .booking{padding:28px;}
+    .form-grid{grid-template-columns:1fr;}
+    .contact-grid{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr; gap:30px;}
+    .sticky-mobile-cta{display:flex;}
+    .floaters{bottom:84px; right:14px;}
+    .commute-rail{padding-top:24px;}
+  }
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="wrap nav-row">
+    <a href="#home" class="logo">
+      <div class="logo-mark">க</div>
+      <div>Koodu Hostel<span>Kakkanad · Kochi</span></div>
+    </a>
+    <nav class="links">
+      <a href="#why">Why Us</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#food">Food</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+919876543210" class="nav-call">📞 +91 98765 43210</a>
+      <a href="#book" class="btn btn-primary btn-sm">Book Now</a>
+      <button class="burger" id="burgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-top">
+    <div class="logo"><div class="logo-mark">க</div>Koodu Hostel</div>
+    <button class="burger" id="closeBurger" aria-label="Close menu"><span style="transform:rotate(45deg);"></span><span style="display:none;"></span><span style="transform:rotate(-45deg); margin-top:-6px;"></span></button>
+  </div>
+  <a href="#why">Why Us</a>
+  <a href="#rooms">Rooms</a>
+  <a href="#food">Food</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+  <a href="#book" class="btn btn-primary" style="margin-top:18px; text-align:center; border:none;">Book Your Bed</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Men's &amp; Ladies' Hostel · Mavelipuram, Kakkanad</span>
+      <h1>A home-cooked stay, <em>two minutes</em> from Infopark</h1>
+      <p class="lead">Affordable Men's &amp; Ladies' Hostel in Kakkanad with homely food included — built for students, IT professionals, interns and job seekers working around Infopark, SmartCity, CSEZ and Kakkanad.</p>
+      <div class="hero-actions">
+        <a href="#book" class="btn btn-primary">Book Your Bed</a>
+        <a href="tel:+919876543210" class="btn btn-outline">📞 Call Now</a>
+      </div>
+      <div class="badges">
+        <span class="badge"><span class="dot">₹</span>Affordable Monthly Rent</span>
+        <span class="badge"><span class="dot">🍛</span>Homely Food Included</span>
+        <span class="badge"><span class="dot">📶</span>High-Speed WiFi</span>
+        <span class="badge"><span class="dot">🚻</span>Separate Men &amp; Ladies</span>
+        <span class="badge"><span class="dot">📍</span>Near Infopark</span>
+        <span class="badge"><span class="dot">⚡</span>24×7 Water &amp; Power</span>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="frame">
+        <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=900&auto=format&fit=crop" alt="Clean shared hostel room in Kakkanad with comfortable beds">
+      </div>
+      <div class="float-card fc1">
+        <div class="ic">🍽️</div>
+        <div><strong>3 Meals Daily</strong><small>Homely &amp; hygienic</small></div>
+      </div>
+      <div class="float-card fc2">
+        <div class="ic">🛡️</div>
+        <div><strong>CCTV Secured</strong><small>Safe for everyone</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUTE LINE (signature element) -->
+<section class="commute">
+  <div class="wrap">
+    <div class="commute-head reveal">
+      <div>
+        <span class="eyebrow">The Koodu Line</span>
+        <h2 style="margin-top:10px;">Closer to work than your alarm snooze</h2>
+      </div>
+      <p style="max-width:380px;">Located in Mavelipuram, Kakkanad — quick access to every IT hub, college and landmark that matters around Infopark.</p>
+    </div>
+    <div class="commute-rail reveal" id="commuteRail">
+      <div class="commute-track">
+        <div class="commute-line-bg"></div>
+        <div class="commute-line-fill"></div>
+        <div class="stop"><div class="node"></div><span class="time">Start</span><span class="name">Koodu Hostel<small>Mavelipuram</small></span></div>
+        <div class="stop"><div class="node"></div><span class="time">7 min</span><span class="name">Infopark Phase 1<small>Walk / bike</small></span></div>
+        <div class="stop"><div class="node"></div><span class="time">10 min</span><span class="name">SmartCity Kochi<small>By bike</small></span></div>
+        <div class="stop"><div class="node"></div><span class="time">9 min</span><span class="name">CSEZ<small>By bike</small></span></div>
+        <div class="stop"><div class="node"></div><span class="time">12 min</span><span class="name">Kakkanad Bus Stand<small>By auto</small></span></div>
+        <div class="stop"><div class="node"></div><span class="time">8 min</span><span class="name">Civil Station<small>By bike</small></span></div>
+        <div class="stop"><div class="node"></div><span class="time">15 min</span><span class="name">Lulu Mall<small>By bike</small></span></div>
+        <div class="stop"><div class="node"></div><span class="time">18 min</span><span class="name">Metro Station<small>By auto</small></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section section-soft" id="why">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Why Choose Us</span>
+      <h2>Built for people who'd rather come home than just crash somewhere</h2>
+      <p>Everything you need for a comfortable, stress-free stay near Infopark — without the inflated PG pricing.</p>
+    </div>
+    <div class="grid-cards">
+      <div class="feature-card reveal"><div class="ic">₹</div><h3>Affordable Monthly Rent</h3><p>Budget-friendly accommodation without compromising on comfort or cleanliness.</p></div>
+      <div class="feature-card reveal"><div class="ic">🍛</div><h3>Homely Food Included</h3><p>Fresh breakfast, lunch and dinner served every day — just like home.</p></div>
+      <div class="feature-card reveal"><div class="ic">📍</div><h3>Prime Location</h3><p>Minutes from Infopark, SmartCity, CSEZ, colleges and public transport in Kakkanad.</p></div>
+      <div class="feature-card reveal"><div class="ic">📶</div><h3>High-Speed WiFi</h3><p>Reliable connectivity for remote work, online classes and downtime.</p></div>
+      <div class="feature-card reveal"><div class="ic">🛡️</div><h3>Safe &amp; Secure</h3><p>Separate accommodation for Men and Ladies with round-the-clock CCTV surveillance.</p></div>
+      <div class="feature-card reveal"><div class="ic">🧼</div><h3>Clean &amp; Hygienic Rooms</h3><p>Well-maintained rooms and common areas, cleaned and inspected regularly.</p></div>
+      <div class="feature-card reveal"><div class="ic">⚡</div><h3>24×7 Water &amp; Electricity</h3><p>Uninterrupted water and power supply, every single day.</p></div>
+      <div class="feature-card reveal"><div class="ic">💧</div><h3>Purified Drinking Water</h3><p>Safe, filtered drinking water available around the clock.</p></div>
+      <div class="feature-card reveal"><div class="ic">🤝</div><h3>Friendly Management</h3><p>Responsive, on-site support whenever you need a hand.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- NEARBY -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Nearby Locations</span>
+      <h2>Everything around Kakkanad, within reach</h2>
+      <p>Minutes away from major IT companies, colleges, restaurants, supermarkets, hospitals and public transportation.</p>
+    </div>
+    <div class="nearby-grid">
+      <div class="nearby-card reveal"><div class="pin">📍</div><strong>Infopark</strong></div>
+      <div class="nearby-card reveal"><div class="pin">📍</div><strong>SmartCity Kochi</strong></div>
+      <div class="nearby-card reveal"><div class="pin">📍</div><strong>CSEZ</strong></div>
+      <div class="nearby-card reveal"><div class="pin">📍</div><strong>Civil Station</strong></div>
+      <div class="nearby-card reveal"><div class="pin">📍</div><strong>Kakkanad Bus Stand</strong></div>
+      <div class="nearby-card reveal"><div class="pin">📍</div><strong>Lulu Mall</strong></div>
+      <div class="nearby-card reveal"><div class="pin">📍</div><strong>Metro Station</strong></div>
+      <div class="nearby-card reveal" style="background:var(--green-soft); border-color:transparent;"><div class="pin">🚲</div><strong>+ Bike Parking Onsite</strong></div>
+    </div>
+  </div>
+</section>
+
+<!-- ROOMS -->
+<section class="section section-soft" id="rooms">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Room Options</span>
+      <h2>Pick the sharing that suits you</h2>
+      <p>Every room — single, double or triple sharing — includes homely food and WiFi as standard.</p>
+    </div>
+    <div class="room-grid">
+      <div class="room-card reveal">
+        <div class="room-img"><img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=700&auto=format&fit=crop" alt="Single sharing hostel room"></div>
+        <div class="room-body">
+          <h3>Single Sharing</h3>
+          <p>Ideal for professionals seeking maximum privacy.</p>
+          <ul class="incl">
+            <li><span class="chk">✓</span> Comfortable Bed</li>
+            <li><span class="chk">✓</span> Storage Cupboard</li>
+            <li><span class="chk">✓</span> Fan</li>
+            <li><span class="chk">✓</span> WiFi</li>
+            <li><span class="chk">✓</span> Food Included</li>
+            <li><span class="chk">✓</span> Attached / Common Bathroom</li>
+          </ul>
+          <a href="#book" class="btn btn-outline btn-block">Enquire for Price</a>
+        </div>
+      </div>
+      <div class="room-card popular reveal">
+        <span class="popular-tag">Most Popular</span>
+        <div class="room-img"><img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?q=80&w=700&auto=format&fit=crop" alt="Double sharing hostel room"></div>
+        <div class="room-body">
+          <h3>Double Sharing</h3>
+          <p>Comfort and affordability, evenly balanced.</p>
+          <ul class="incl">
+            <li><span class="chk">✓</span> Comfortable Beds</li>
+            <li><span class="chk">✓</span> Storage</li>
+            <li><span class="chk">✓</span> WiFi</li>
+            <li><span class="chk">✓</span> Food Included</li>
+            <li><span class="chk">✓</span> Attached / Common Bathroom</li>
+          </ul>
+          <a href="#book" class="btn btn-primary btn-block">Enquire for Price</a>
+        </div>
+      </div>
+      <div class="room-card reveal">
+        <div class="room-img"><img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=700&auto=format&fit=crop" alt="Triple sharing hostel room"></div>
+        <div class="room-body">
+          <h3>Triple Sharing</h3>
+          <p>Perfect for budget-conscious students.</p>
+          <ul class="incl">
+            <li><span class="chk">✓</span> Comfortable Beds</li>
+            <li><span class="chk">✓</span> Cupboard</li>
+            <li><span class="chk">✓</span> WiFi</li>
+            <li><span class="chk">✓</span> Food Included</li>
+            <li><span class="chk">✓</span> Attached / Common Bathroom</li>
+          </ul>
+          <a href="#book" class="btn btn-outline btn-block">Enquire for Price</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section" id="food">
+  <div class="wrap food-grid">
+    <div class="reveal">
+      <span class="eyebrow">Homely Food, Daily</span>
+      <h2>Enjoy fresh homely meals every day</h2>
+      <p>Real food, cooked the way it is at home — because a long day at Infopark deserves a proper meal at the end of it.</p>
+      <div class="food-meals">
+        <div class="meal-pill"><div class="ic">🌅</div><strong>Breakfast</strong></div>
+        <div class="meal-pill"><div class="ic">🍛</div><strong>Lunch</strong></div>
+        <div class="meal-pill"><div class="ic">🌙</div><strong>Dinner</strong></div>
+      </div>
+      <ul class="food-points">
+        <li>Freshly prepared every single day</li>
+        <li>Clean and hygienic kitchen</li>
+        <li>Nutritious, home-style meals</li>
+        <li>Vegetarian and Non-Vegetarian options available</li>
+      </ul>
+    </div>
+    <div class="food-visual reveal">
+      <img src="https://images.unsplash.com/photo-1604908554007-4e7461d70fcf?q=80&w=900&auto=format&fit=crop" alt="Homely South Indian meal served at the hostel">
+    </div>
+  </div>
+</section>
+
+<!-- FACILITIES -->
+<section class="section section-soft">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Hostel Facilities</span>
+      <h2>Everything covered, nothing left out</h2>
+    </div>
+    <div class="fac-grid">
+      <div class="fac-item reveal"><div class="ic">📶</div><span>High-Speed WiFi</span></div>
+      <div class="fac-item reveal"><div class="ic">🛏️</div><span>Comfortable Beds</span></div>
+      <div class="fac-item reveal"><div class="ic">💧</div><span>Purified Water</span></div>
+      <div class="fac-item reveal"><div class="ic">📷</div><span>CCTV Security</span></div>
+      <div class="fac-item reveal"><div class="ic">🏍️</div><span>Bike Parking</span></div>
+      <div class="fac-item reveal"><div class="ic">🚰</div><span>24×7 Water Supply</span></div>
+      <div class="fac-item reveal"><div class="ic">⚡</div><span>24×7 Electricity</span></div>
+      <div class="fac-item reveal"><div class="ic">🍽️</div><span>Dining Area</span></div>
+      <div class="fac-item reveal"><div class="ic">🛋️</div><span>Spacious Rooms</span></div>
+      <div class="fac-item reveal"><div class="ic">🤝</div><span>Friendly Management</span></div>
+      <div class="fac-item reveal"><div class="ic">🚻</div><span>Separate Men &amp; Ladies</span></div>
+      <div class="fac-item reveal"><div class="ic">🧺</div><span>Common Corridors</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Gallery</span>
+      <h2>A look inside Koodu</h2>
+    </div>
+    <div class="gallery-grid reveal">
+      <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=500&auto=format&fit=crop" alt="Hostel bedroom">
+      <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?q=80&w=500&auto=format&fit=crop" alt="Hostel bedroom interior">
+      <img src="https://images.unsplash.com/photo-1604908554007-4e7461d70fcf?q=80&w=500&auto=format&fit=crop" alt="Homely food served">
+      <img src="https://images.unsplash.com/photo-1556909114-44e3e9699e2b?q=80&w=500&auto=format&fit=crop" alt="Dining area">
+      <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=500&auto=format&fit=crop" alt="Building exterior">
+      <img src="https://images.unsplash.com/photo-1521783988139-89397d761dce?q=80&w=500&auto=format&fit=crop" alt="Hostel kitchen">
+      <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=500&auto=format&fit=crop" alt="Common corridor">
+      <img src="https://images.unsplash.com/photo-1564540583246-934409427776?q=80&w=500&auto=format&fit=crop" alt="Washroom">
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section section-soft" id="reviews">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Testimonials</span>
+      <h2>What residents say about Koodu</h2>
+    </div>
+    <div class="testi-row">
+      <div class="testi-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"I moved to Kakkanad for my first job. Affordable rent, delicious food, and a peaceful atmosphere."</p>
+        <div class="testi-who"><div class="testi-avatar">S</div><div><strong>Sachin R.</strong><span>Software Engineer</span></div></div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Very close to Infopark. The rooms are clean, the food is excellent, and the management is supportive."</p>
+        <div class="testi-who"><div class="testi-avatar">A</div><div><strong>Anjali M.</strong><span>Working Professional</span></div></div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"The perfect hostel for students. Budget-friendly and comfortable — feels like home."</p>
+        <div class="testi-who"><div class="testi-avatar">N</div><div><strong>Nikhil P.</strong><span>College Student</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">FAQs</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <div class="faq-q"><h3>Is food included?</h3><span class="plus">+</span></div>
+        <div class="faq-a"><p>Yes — breakfast, lunch and dinner are included with every room type at Koodu Hostel.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>Do you have separate hostels for Men and Ladies?</h3><span class="plus">+</span></div>
+        <div class="faq-a"><p>Yes, we maintain fully separate accommodation blocks and entrances for Men and Ladies, each with CCTV surveillance.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>Is WiFi available?</h3><span class="plus">+</span></div>
+        <div class="faq-a"><p>Yes, high-speed WiFi is available throughout the hostel, ideal for remote work and online classes.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>Can working professionals stay?</h3><span class="plus">+</span></div>
+        <div class="faq-a"><p>Absolutely — Koodu is home to a mix of students, interns, freshers and working professionals from Infopark, SmartCity and CSEZ.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>Is bike parking available?</h3><span class="plus">+</span></div>
+        <div class="faq-a"><p>Yes, secure on-site bike parking is available free of cost for all residents.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>How much is the security deposit?</h3><span class="plus">+</span></div>
+        <div class="faq-a"><p>Deposit amounts vary by room type and duration of stay — share your details in the booking form and our team will confirm within 15 minutes.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>Can I move in immediately?</h3><span class="plus">+</span></div>
+        <div class="faq-a"><p>Yes, immediate occupancy is available — move in today with a simple booking process.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>How far is Infopark?</h3><span class="plus">+</span></div>
+        <div class="faq-a"><p>Infopark Phase 1 is approximately 7 minutes away by bike, making Koodu one of the most conveniently located hostels in Kakkanad.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING FORM -->
+<section class="section" id="book">
+  <div class="wrap">
+    <div class="booking reveal">
+      <div class="booking-info">
+        <span class="eyebrow">Book Your Bed</span>
+        <h2>Reserve your spot at Koodu, Kakkanad</h2>
+        <p>Fill in your details below and our team will reach out to confirm bed availability — usually within 15 minutes.</p>
+        <ul class="booking-trust">
+          <li><span class="ic">⚡</span> Response within 15 minutes</li>
+          <li><span class="ic">🔒</span> No spam, no hidden charges</li>
+          <li><span class="ic">🏠</span> Immediate move-in available</li>
+        </ul>
+      </div>
+      <div class="booking-form">
+        <form id="bookingForm">
+          <div class="form-grid">
+            <div class="field"><label for="fname">Full Name</label><input type="text" id="fname" required placeholder="Your full name"></div>
+            <div class="field"><label for="mobile">Mobile Number</label><input type="tel" id="mobile" required placeholder="10-digit mobile number"></div>
+            <div class="field"><label for="whatsapp">WhatsApp Number</label><input type="tel" id="whatsapp" placeholder="Same as mobile, if applicable"></div>
+            <div class="field"><label for="email">Email Address</label><input type="email" id="email" placeholder="you@example.com"></div>
+            <div class="field full">
+              <label>Gender</label>
+              <div class="radio-group">
+                <label><input type="radio" name="gender" value="Male" checked><span>Male</span></label>
+                <label><input type="radio" name="gender" value="Female"><span>Female</span></label>
+              </div>
+            </div>
+            <div class="field"><label for="occupation">Occupation</label>
+              <select id="occupation">
+                <option>Student</option><option>Working Professional</option><option>Intern</option><option>Other</option>
+              </select>
+            </div>
+            <div class="field"><label for="room">Preferred Room</label>
+              <select id="room">
+                <option>Single Sharing</option><option>Double Sharing</option><option>Triple Sharing</option>
+              </select>
+            </div>
+            <div class="field"><label for="movein">Expected Move-in Date</label><input type="date" id="movein"></div>
+            <div class="field"><label for="duration">Duration of Stay</label>
+              <select id="duration">
+                <option>1–3 Months</option><option>3–6 Months</option><option>6–12 Months</option><option>12+ Months</option>
+              </select>
+            </div>
+            <div class="field full"><label for="notes">Special Requirements</label><textarea id="notes" rows="3" placeholder="Anything else we should know?"></textarea></div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Book My Bed</button>
+          <p class="form-note">We'll contact you within 15 minutes to confirm availability.</p>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <div class="ic">✓</div>
+          <h3>Thank you, your request is in!</h3>
+          <p>Our team will call or WhatsApp you within 15 minutes to confirm bed availability.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section-soft" id="contact">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <span class="eyebrow">Contact Us</span>
+      <h2>Find us in Mavelipuram, Kakkanad</h2>
+      <p>Have a question before booking? Reach out — we're happy to help.</p>
+      <div class="contact-list">
+        <div class="contact-row"><div class="ic">📞</div><div><strong>+91 98765 43210</strong><span>Phone</span></div></div>
+        <div class="contact-row"><div class="ic">💬</div><div><strong>+91 98765 43210</strong><span>WhatsApp</span></div></div>
+        <div class="contact-row"><div class="ic">✉️</div><div><strong>stay@kooduhostel.in</strong><span>Email</span></div></div>
+        <div class="contact-row"><div class="ic">📍</div><div><strong>Mavelipuram, Kakkanad</strong><span>Kochi, Kerala</span></div></div>
+      </div>
+      <a href="https://maps.google.com/?q=Mavelipuram,Kakkanad,Kochi,Kerala" target="_blank" class="btn btn-outline" style="margin-top:24px;">Get Directions</a>
+    </div>
+    <div class="map-frame reveal">
+      <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=900&auto=format&fit=crop" alt="Map area near Kakkanad, Kochi">
+      <div class="map-pin-overlay"><div class="pulse"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><div class="logo-mark">க</div>Koodu Hostel</div>
+        <p style="color:rgba(255,255,255,0.65); font-size:14px; max-width:280px;">Affordable Men's &amp; Ladies' Hostel in Mavelipuram, Kakkanad with homely food included — built for the Infopark crowd.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#why">Facilities</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Location</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#contact">Mavelipuram, Kakkanad</a></li>
+          <li><a href="#contact">Get Directions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get In Touch</h4>
+        <ul>
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><a href="mailto:stay@kooduhostel.in">stay@kooduhostel.in</a></li>
+          <li><a href="#book">Book Your Bed</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Koodu Hostel. All Rights Reserved.</span>
+      <span>Men's &amp; Ladies' Hostel in Kakkanad · Near Infopark, SmartCity &amp; CSEZ</span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="floaters">
+  <a href="https://wa.me/919876543210" target="_blank" class="float-btn wa" aria-label="WhatsApp us">💬</a>
+  <a href="tel:+919876543210" class="float-btn call" aria-label="Call us">📞</a>
+</div>
+
+<div class="sticky-mobile-cta">
+  <a href="tel:+919876543210" class="btn btn-outline btn-sm">📞 Call</a>
+  <a href="#book" class="btn btn-primary btn-sm">Book Now</a>
+</div>
+
+<script>
+  // Header scroll state
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 30);
+  });
+
+  // Mobile menu
+  const burgerBtn = document.getElementById('burgerBtn');
+  const closeBurger = document.getElementById('closeBurger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  burgerBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+  closeBurger.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+  // Reveal on scroll
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => io.observe(el));
+
+  // Commute line fill trigger
+  const commuteRail = document.getElementById('commuteRail');
+  const io2 = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io2.unobserve(e.target); } });
+  }, { threshold: 0.3 });
+  io2.observe(commuteRail);
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item => {
+    const q = item.querySelector('.faq-q');
+    const a = item.querySelector('.faq-a');
+    q.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(o => {
+        o.classList.remove('open');
+        o.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        a.style.maxHeight = a.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // Booking form submit (front-end only)
+  const bookingForm = document.getElementById('bookingForm');
+  const formSuccess = document.getElementById('formSuccess');
+  bookingForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    bookingForm.style.display = 'none';
+    formSuccess.style.display = 'block';
+  });
+</script>
+
+</body>
+</html>
