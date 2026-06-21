@@ -240,13 +240,6 @@
   .room-body{padding:26px 26px 28px; display:flex; flex-direction:column; flex:1;}
   .room-body h3{margin-bottom:6px;}
   .room-body > p{font-size:14px; margin-bottom:18px;}
-  .price-row{display:flex; gap:10px; margin-bottom:20px; flex-wrap:wrap;}
-  .price-chip{flex:1; min-width:130px; background:var(--bg-soft); border:1px solid var(--line); border-radius:12px; padding:10px 12px;}
-  .price-chip .amt{font-family:'JetBrains Mono', monospace; font-weight:600; font-size:16px; color:var(--blue-deep); display:block;}
-  .price-chip .lbl{font-size:11.5px; color:var(--ink-faint); text-transform:uppercase; letter-spacing:0.04em; font-weight:600;}
-  .price-chip.food{background:var(--green-soft); border-color:transparent;}
-  .price-chip.food .amt{color:var(--green-deep);}
-  .price-note{font-size:12px; color:var(--ink-faint); margin:-10px 0 18px;}
   .room-body .incl{flex:1; margin-bottom:22px;}
   .room-body .incl li{display:flex; align-items:center; gap:9px; font-size:14px; color:var(--ink); padding:6px 0; border-bottom:1px dashed var(--line);}
   .room-body .incl li:last-child{border-bottom:none;}
@@ -425,19 +418,19 @@
   <div class="wrap nav-row">
     <a href="#home" class="logo">
       <div class="logo-mark">க</div>
-      <div>Stay Kakkanad<span>Hostel Finder · Kakkanad</span></div>
+      <div>Koodu Hostel<span>Kakkanad · Kochi</span></div>
     </a>
     <nav class="links">
       <a href="#why">Why Us</a>
-      <a href="#rooms">Pricing</a>
+      <a href="#rooms">Rooms</a>
       <a href="#food">Food</a>
-      <!-- <a href="#gallery">Gallery</a> -->
+      <a href="#gallery">Gallery</a>
       <a href="#reviews">Reviews</a>
       <a href="#faq">FAQ</a>
     </nav>
     <div class="nav-cta">
       <a href="tel:+919876543210" class="nav-call">📞 +91 98765 43210</a>
-      <a href="#book" class="btn btn-primary btn-sm">Find My Hostel</a>
+      <a href="#book" class="btn btn-primary btn-sm">Book Now</a>
       <button class="burger" id="burgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -445,50 +438,50 @@
 
 <div class="mobile-menu" id="mobileMenu">
   <div class="mobile-menu-top">
-    <div class="logo"><div class="logo-mark">க</div>Stay Kakkanad</div>
+    <div class="logo"><div class="logo-mark">க</div>Koodu Hostel</div>
     <button class="burger" id="closeBurger" aria-label="Close menu"><span style="transform:rotate(45deg);"></span><span style="display:none;"></span><span style="transform:rotate(-45deg); margin-top:-6px;"></span></button>
   </div>
   <a href="#why">Why Us</a>
-  <a href="#rooms">Pricing</a>
+  <a href="#rooms">Rooms</a>
   <a href="#food">Food</a>
-  <!-- <a href="#gallery">Gallery</a> -->
+  <a href="#gallery">Gallery</a>
   <a href="#reviews">Reviews</a>
   <a href="#faq">FAQ</a>
   <a href="#contact">Contact</a>
-  <a href="#book" class="btn btn-primary" style="margin-top:18px; text-align:center; border:none;">Find My Hostel</a>
+  <a href="#book" class="btn btn-primary" style="margin-top:18px; text-align:center; border:none;">Book Your Bed</a>
 </div>
 
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="wrap hero-grid">
     <div class="hero-copy reveal">
-      <span class="eyebrow">Men's &amp; Ladies' Hostel Finder · Kakkanad</span>
-      <h1>Find your <em>perfect hostel</em>, minutes from Infopark</h1>
-      <p class="lead">We help students, IT professionals, interns and job seekers find safe, affordable Men's &amp; Ladies' Hostels in Kakkanad — including our own hostel in Mavelipuram — with homely food options. Rent starts from just ₹2,000/month, and our service is completely free for you.</p>
+      <span class="eyebrow">Men's &amp; Ladies' Hostel · Mavelipuram, Kakkanad</span>
+      <h1>A home-cooked stay, <em>two minutes</em> from Infopark</h1>
+      <p class="lead">Affordable Men's &amp; Ladies' Hostel in Kakkanad with homely food included — built for students, IT professionals, interns and job seekers working around Infopark, SmartCity, CSEZ and Kakkanad.</p>
       <div class="hero-actions">
-        <a href="#book" class="btn btn-primary">Find My Hostel</a>
+        <a href="#book" class="btn btn-primary">Book Your Bed</a>
         <a href="tel:+919876543210" class="btn btn-outline">📞 Call Now</a>
       </div>
       <div class="badges">
-        <span class="badge"><span class="dot">₹</span>Starts at ₹2,000/month</span>
-        <span class="badge"><span class="dot">🍛</span>Food Plans from ₹4,500</span>
+        <span class="badge"><span class="dot">₹</span>Affordable Monthly Rent</span>
+        <span class="badge"><span class="dot">🍛</span>Homely Food Included</span>
         <span class="badge"><span class="dot">📶</span>High-Speed WiFi</span>
-        <span class="badge"><span class="dot">🚻</span>Separate Hostels for Men &amp; Ladies</span>
+        <span class="badge"><span class="dot">🚻</span>Separate Men &amp; Ladies</span>
         <span class="badge"><span class="dot">📍</span>Near Infopark</span>
-        <span class="badge"><span class="dot">🆓</span>Zero Cost to You</span>
+        <span class="badge"><span class="dot">⚡</span>24×7 Water &amp; Power</span>
       </div>
     </div>
     <div class="hero-visual reveal">
       <div class="frame">
-        <img src="img/room.avif" alt="Clean shared hostel room in Kakkanad with comfortable beds">
+        <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=900&auto=format&fit=crop" alt="Clean shared hostel room in Kakkanad with comfortable beds">
       </div>
       <div class="float-card fc1">
         <div class="ic">🍽️</div>
-        <div><strong>Food from ₹4,500</strong><small>3 meals, daily</small></div>
+        <div><strong>3 Meals Daily</strong><small>Homely &amp; hygienic</small></div>
       </div>
       <div class="float-card fc2">
-        <div class="ic">🏠</div>
-        <div><strong>Verified Hostels</strong><small>Across Kakkanad</small></div>
+        <div class="ic">🛡️</div>
+        <div><strong>CCTV Secured</strong><small>Safe for everyone</small></div>
       </div>
     </div>
   </div>
@@ -499,16 +492,16 @@
   <div class="wrap">
     <div class="commute-head reveal">
       <div>
-        <span class="eyebrow">The Kakkanad Line</span>
+        <span class="eyebrow">The Koodu Line</span>
         <h2 style="margin-top:10px;">Closer to work than your alarm snooze</h2>
       </div>
-      <p style="max-width:380px;">Our hostels in Mavelipuram, Kakkanad sit minutes from every IT hub, college and landmark that matters around Infopark.</p>
+      <p style="max-width:380px;">Located in Mavelipuram, Kakkanad — quick access to every IT hub, college and landmark that matters around Infopark.</p>
     </div>
     <div class="commute-rail reveal" id="commuteRail">
       <div class="commute-track">
         <div class="commute-line-bg"></div>
         <div class="commute-line-fill"></div>
-        <div class="stop"><div class="node"></div><span class="time">Start</span><span class="name">Stay Kakkanad<small>Mavelipuram</small></span></div>
+        <div class="stop"><div class="node"></div><span class="time">Start</span><span class="name">Koodu Hostel<small>Mavelipuram</small></span></div>
         <div class="stop"><div class="node"></div><span class="time">7 min</span><span class="name">Infopark Phase 1<small>Walk / bike</small></span></div>
         <div class="stop"><div class="node"></div><span class="time">10 min</span><span class="name">SmartCity Kochi<small>By bike</small></span></div>
         <div class="stop"><div class="node"></div><span class="time">9 min</span><span class="name">CSEZ<small>By bike</small></span></div>
@@ -526,19 +519,19 @@
   <div class="wrap">
     <div class="section-head center reveal">
       <span class="eyebrow">Why Choose Us</span>
-      <h2>The easiest way to find a hostel in Kakkanad</h2>
-      <p>We match you with safe, verified Men's &amp; Ladies' Hostels near Infopark — including our own hostel in Mavelipuram — at no cost to you.</p>
+      <h2>Built for people who'd rather come home than just crash somewhere</h2>
+      <p>Everything you need for a comfortable, stress-free stay near Infopark — without the inflated PG pricing.</p>
     </div>
     <div class="grid-cards">
-      <div class="feature-card reveal"><div class="ic">🆓</div><h3>100% Free for You</h3><p>Our hostel-finding service is completely free — we're never paid by you, only by partner hostels.</p></div>
-      <div class="feature-card reveal"><div class="ic">₹</div><h3>Starts at ₹2,000/month</h3><p>Budget-friendly rent without food, with food plans available from ₹4,500/month.</p></div>
-      <div class="feature-card reveal"><div class="ic">🍛</div><h3>Homely Food, Optional</h3><p>Choose room-only or food-included plans — fresh breakfast, lunch and dinner, just like home.</p></div>
+      <div class="feature-card reveal"><div class="ic">₹</div><h3>Affordable Monthly Rent</h3><p>Budget-friendly accommodation without compromising on comfort or cleanliness.</p></div>
+      <div class="feature-card reveal"><div class="ic">🍛</div><h3>Homely Food Included</h3><p>Fresh breakfast, lunch and dinner served every day — just like home.</p></div>
       <div class="feature-card reveal"><div class="ic">📍</div><h3>Prime Location</h3><p>Minutes from Infopark, SmartCity, CSEZ, colleges and public transport in Kakkanad.</p></div>
       <div class="feature-card reveal"><div class="ic">📶</div><h3>High-Speed WiFi</h3><p>Reliable connectivity for remote work, online classes and downtime.</p></div>
       <div class="feature-card reveal"><div class="ic">🛡️</div><h3>Safe &amp; Secure</h3><p>Separate accommodation for Men and Ladies with round-the-clock CCTV surveillance.</p></div>
-      <div class="feature-card reveal"><div class="ic">🧼</div><h3>Clean &amp; Hygienic Rooms</h3><p>Well-maintained rooms and common areas, inspected before we recommend them to you.</p></div>
+      <div class="feature-card reveal"><div class="ic">🧼</div><h3>Clean &amp; Hygienic Rooms</h3><p>Well-maintained rooms and common areas, cleaned and inspected regularly.</p></div>
       <div class="feature-card reveal"><div class="ic">⚡</div><h3>24×7 Water &amp; Electricity</h3><p>Uninterrupted water and power supply, every single day.</p></div>
       <div class="feature-card reveal"><div class="ic">💧</div><h3>Purified Drinking Water</h3><p>Safe, filtered drinking water available around the clock.</p></div>
+      <div class="feature-card reveal"><div class="ic">🤝</div><h3>Friendly Management</h3><p>Responsive, on-site support whenever you need a hand.</p></div>
     </div>
   </div>
 </section>
@@ -568,72 +561,59 @@
 <section class="section section-soft" id="rooms">
   <div class="wrap">
     <div class="section-head center reveal">
-      <span class="eyebrow">Pricing</span>
-      <h2>Rent starting from ₹2,000/month</h2>
-      <p>Choose room-only or food-included plans across four sharing, double or single sharing — final pricing depends on the hostel we match you with.</p>
+      <span class="eyebrow">Room Options</span>
+      <h2>Pick the sharing that suits you</h2>
+      <p>Every room — single, double or triple sharing — includes homely food and WiFi as standard.</p>
     </div>
     <div class="room-grid">
-      <div class="room-card popular reveal">
-        <span class="popular-tag">Most Popular</span>
-        <div class="room-img"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MDAgNTAwIiB3aWR0aD0iNzAwIiBoZWlnaHQ9IjUwMCI+PHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9IiNGRkZGRkYiLz4KICAgIDxyZWN0IHdpZHRoPSI3MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRTFGNkVDIi8+CiAgICAKICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQwLDQwKSI+CiAgICAgIDxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iMTUwIiByeD0iMTAiIGZpbGw9IiNFN0YxRkEiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSI4Ii8+CiAgICAgIDxsaW5lIHgxPSI4MC4wIiB5MT0iMCIgeDI9IjgwLjAiIHkyPSIxNTAiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSI2Ii8+CiAgICAgIDxsaW5lIHgxPSIwIiB5MT0iNzUuMCIgeDI9IjE2MCIgeTI9Ijc1LjAiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSI2Ii8+CiAgICA8L2c+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MjAsMzApIj48cmVjdCB4PSItMTAiIHk9Ii0xMCIgd2lkdGg9IjI0MCIgaGVpZ2h0PSIyNDAiIHJ4PSIxOCIgZmlsbD0iIzA3M0I2NiIgb3BhY2l0eT0iMC4wNyIvPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwwKSI+CiAgICAgIDxyZWN0IHg9Ii04IiB5PSIyMCIgd2lkdGg9IjIzNiIgaGVpZ2h0PSI5MCIgcng9IjE0IiBmaWxsPSIjMDczQjY2IiBvcGFjaXR5PSIwLjEyIi8+CiAgICAgIDxyZWN0IHg9IjAiIHk9IjMwIiB3aWR0aD0iMjIwIiBoZWlnaHQ9IjgwIiByeD0iMTYiIGZpbGw9IiNGRkZGRkYiLz4KICAgICAgPHJlY3QgeD0iMCIgeT0iNTUiIHdpZHRoPSIyMjAiIGhlaWdodD0iNTUiIHJ4PSIxNCIgZmlsbD0iIzFFOUU2QiIvPgogICAgICA8cmVjdCB4PSIxNCIgeT0iMTQiIHdpZHRoPSI3MC40IiBoZWlnaHQ9IjMyIiByeD0iMTIiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzA3M0I2NiIgc3Ryb2tlLW9wYWNpdHk9IjAuMDgiLz4KICAgICAgPHJlY3QgeD0iMTM1LjYiIHk9IjE0IiB3aWR0aD0iNzAuNCIgaGVpZ2h0PSIzMiIgcng9IjEyIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiMwNzNCNjYiIHN0cm9rZS1vcGFjaXR5PSIwLjA4Ii8+CiAgICAgIDxyZWN0IHg9Ii02IiB5PSI5OCIgd2lkdGg9IjIzMiIgaGVpZ2h0PSIxNCIgcng9IjYiIGZpbGw9IiMwNzNCNjYiLz4KICAgIDwvZz4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsMTEwKSI+CiAgICAgIDxyZWN0IHg9Ii04IiB5PSIyMCIgd2lkdGg9IjIzNiIgaGVpZ2h0PSI5MCIgcng9IjE0IiBmaWxsPSIjMDczQjY2IiBvcGFjaXR5PSIwLjEyIi8+CiAgICAgIDxyZWN0IHg9IjAiIHk9IjMwIiB3aWR0aD0iMjIwIiBoZWlnaHQ9IjgwIiByeD0iMTYiIGZpbGw9IiNGRkZGRkYiLz4KICAgICAgPHJlY3QgeD0iMCIgeT0iNTUiIHdpZHRoPSIyMjAiIGhlaWdodD0iNTUiIHJ4PSIxNCIgZmlsbD0iIzE0NkI0OSIvPgogICAgICA8cmVjdCB4PSIxNCIgeT0iMTQiIHdpZHRoPSI3MC40IiBoZWlnaHQ9IjMyIiByeD0iMTIiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzA3M0I2NiIgc3Ryb2tlLW9wYWNpdHk9IjAuMDgiLz4KICAgICAgPHJlY3QgeD0iMTM1LjYiIHk9IjE0IiB3aWR0aD0iNzAuNCIgaGVpZ2h0PSIzMiIgcng9IjEyIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiMwNzNCNjYiIHN0cm9rZS1vcGFjaXR5PSIwLjA4Ii8+CiAgICAgIDxyZWN0IHg9Ii02IiB5PSI5OCIgd2lkdGg9IjIzMiIgaGVpZ2h0PSIxNCIgcng9IjYiIGZpbGw9IiMwNzNCNjYiLz4KICAgIDwvZz48L2c+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNTAsMjYwKSI+PHJlY3QgeD0iLTEwIiB5PSItMTAiIHdpZHRoPSIyNDAiIGhlaWdodD0iMTMwIiByeD0iMTgiIGZpbGw9IiMwNzNCNjYiIG9wYWNpdHk9IjAuMDciLz4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsMCkiPgogICAgICA8cmVjdCB4PSItOCIgeT0iMjAiIHdpZHRoPSIyMzYiIGhlaWdodD0iOTAiIHJ4PSIxNCIgZmlsbD0iIzA3M0I2NiIgb3BhY2l0eT0iMC4xMiIvPgogICAgICA8cmVjdCB4PSIwIiB5PSIzMCIgd2lkdGg9IjIyMCIgaGVpZ2h0PSI4MCIgcng9IjE2IiBmaWxsPSIjRkZGRkZGIi8+CiAgICAgIDxyZWN0IHg9IjAiIHk9IjU1IiB3aWR0aD0iMjIwIiBoZWlnaHQ9IjU1IiByeD0iMTQiIGZpbGw9IiMwQjVGQTUiLz4KICAgICAgPHJlY3QgeD0iMTQiIHk9IjE0IiB3aWR0aD0iNzAuNCIgaGVpZ2h0PSIzMiIgcng9IjEyIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiMwNzNCNjYiIHN0cm9rZS1vcGFjaXR5PSIwLjA4Ii8+CiAgICAgIDxyZWN0IHg9IjEzNS42IiB5PSIxNCIgd2lkdGg9IjcwLjQiIGhlaWdodD0iMzIiIHJ4PSIxMiIgZmlsbD0iI0ZGRkZGRiIgc3Ryb2tlPSIjMDczQjY2IiBzdHJva2Utb3BhY2l0eT0iMC4wOCIvPgogICAgICA8cmVjdCB4PSItNiIgeT0iOTgiIHdpZHRoPSIyMzIiIGhlaWdodD0iMTQiIHJ4PSI2IiBmaWxsPSIjMDczQjY2Ii8+CiAgICA8L2c+PC9nPgogICAgCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MjAsMjYwKSI+CiAgICAgIDxyZWN0IHg9Ii04IiB5PSIyMCIgd2lkdGg9IjIzNiIgaGVpZ2h0PSIxMTAiIHJ4PSIxNCIgZmlsbD0iIzA3M0I2NiIgb3BhY2l0eT0iMC4xMiIvPgogICAgICA8cmVjdCB4PSIwIiB5PSIzMCIgd2lkdGg9IjIyMCIgaGVpZ2h0PSIxMDAiIHJ4PSIxNiIgZmlsbD0iI0ZGRkZGRiIvPgogICAgICA8cmVjdCB4PSIwIiB5PSI1NSIgd2lkdGg9IjIyMCIgaGVpZ2h0PSI3NSIgcng9IjE0IiBmaWxsPSIjMTQ2QjQ5Ii8+CiAgICAgIDxyZWN0IHg9IjE0IiB5PSIxNCIgd2lkdGg9IjcwLjQiIGhlaWdodD0iMzIiIHJ4PSIxMiIgZmlsbD0iI0ZGRkZGRiIgc3Ryb2tlPSIjMDczQjY2IiBzdHJva2Utb3BhY2l0eT0iMC4wOCIvPgogICAgICA8cmVjdCB4PSIxMzUuNiIgeT0iMTQiIHdpZHRoPSI3MC40IiBoZWlnaHQ9IjMyIiByeD0iMTIiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzA3M0I2NiIgc3Ryb2tlLW9wYWNpdHk9IjAuMDgiLz4KICAgICAgPHJlY3QgeD0iLTYiIHk9IjExOCIgd2lkdGg9IjIzMiIgaGVpZ2h0PSIxNCIgcng9IjYiIGZpbGw9IiMwNzNCNjYiLz4KICAgIDwvZz4KICAgIAogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjEwLDQ0MCkgc2NhbGUoMC45KSI+CiAgICAgIDxwYXRoIGQ9Ik0gLTE4IDAgTCAxOCAwIEwgMTIgMzYgTCAtMTIgMzYgWiIgZmlsbD0iI0M5N0I0QSIvPgogICAgICA8ZWxsaXBzZSBjeD0iMCIgY3k9Ii02IiByeD0iNCIgcnk9IjM0IiBmaWxsPSIjMTQ2QjQ5IiB0cmFuc2Zvcm09InJvdGF0ZSgtMTgpIi8+CiAgICAgIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTYiIHJ4PSI0IiByeT0iMzQiIGZpbGw9IiMxNDZCNDkiIHRyYW5zZm9ybT0icm90YXRlKDApIi8+CiAgICAgIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTYiIHJ4PSI0IiByeT0iMzQiIGZpbGw9IiMxNDZCNDkiIHRyYW5zZm9ybT0icm90YXRlKDE4KSIvPgogICAgICA8ZWxsaXBzZSBjeD0iMCIgY3k9Ii02IiByeD0iNCIgcnk9IjMwIiBmaWxsPSIjMTQ2QjQ5IiB0cmFuc2Zvcm09InJvdGF0ZSgtMzIpIi8+CiAgICAgIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTYiIHJ4PSI0IiByeT0iMzAiIGZpbGw9IiMxNDZCNDkiIHRyYW5zZm9ybT0icm90YXRlKDMyKSIvPgogICAgPC9nPgogICAgPC9zdmc+" alt="Four sharing hostel room"></div>
-        <div class="room-body">
-          <h3>Four Sharing</h3>
-          <p>Our most budget-friendly option for students.</p>
-          <div class="price-row">
-            <div class="price-chip"><span class="amt">From ₹2,000</span><span class="lbl">Without Food</span></div>
-            <div class="price-chip food"><span class="amt">From ₹4,500</span><span class="lbl">With Food</span></div>
-          </div>
-          <ul class="incl">
-            <li><span class="chk">✓</span> Comfortable Beds</li>
-            <li><span class="chk">✓</span> Storage Cupboard</li>
-            <li><span class="chk">✓</span> WiFi</li>
-            <li><span class="chk">✓</span> Food Optional (Add-on)</li>
-            <li><span class="chk">✓</span> Attached / Common Bathroom</li>
-          </ul>
-          <a href="#book" class="btn btn-primary btn-block">Check Availability</a>
-        </div>
-      </div>
       <div class="room-card reveal">
-        <div class="room-img"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MDAgNTAwIiB3aWR0aD0iNzAwIiBoZWlnaHQ9IjUwMCI+PHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9IiNGRkZGRkYiLz4KICAgIDxyZWN0IHdpZHRoPSI3MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRTdGMUZBIi8+CiAgICAKICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI4MCwzMCkiPgogICAgICA8cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjE1MCIgcng9IjEwIiBmaWxsPSIjRTdGMUZBIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iOCIvPgogICAgICA8bGluZSB4MT0iODAuMCIgeTE9IjAiIHgyPSI4MC4wIiB5Mj0iMTUwIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iNiIvPgogICAgICA8bGluZSB4MT0iMCIgeTE9Ijc1LjAiIHgyPSIxNjAiIHkyPSI3NS4wIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iNiIvPgogICAgPC9nPgogICAgCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2MCwyMzApIj4KICAgICAgPHJlY3QgeD0iLTgiIHk9IjIwIiB3aWR0aD0iMjc2IiBoZWlnaHQ9IjE0MCIgcng9IjE0IiBmaWxsPSIjMDczQjY2IiBvcGFjaXR5PSIwLjEyIi8+CiAgICAgIDxyZWN0IHg9IjAiIHk9IjMwIiB3aWR0aD0iMjYwIiBoZWlnaHQ9IjEzMCIgcng9IjE2IiBmaWxsPSIjRkZGRkZGIi8+CiAgICAgIDxyZWN0IHg9IjAiIHk9IjU1IiB3aWR0aD0iMjYwIiBoZWlnaHQ9IjEwNSIgcng9IjE0IiBmaWxsPSIjMEI1RkE1Ii8+CiAgICAgIDxyZWN0IHg9IjE0IiB5PSIxNCIgd2lkdGg9IjgzLjIiIGhlaWdodD0iMzIiIHJ4PSIxMiIgZmlsbD0iI0ZGRkZGRiIgc3Ryb2tlPSIjMDczQjY2IiBzdHJva2Utb3BhY2l0eT0iMC4wOCIvPgogICAgICA8cmVjdCB4PSIxNjIuOCIgeT0iMTQiIHdpZHRoPSI4My4yIiBoZWlnaHQ9IjMyIiByeD0iMTIiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzA3M0I2NiIgc3Ryb2tlLW9wYWNpdHk9IjAuMDgiLz4KICAgICAgPHJlY3QgeD0iLTYiIHk9IjE0OCIgd2lkdGg9IjI3MiIgaGVpZ2h0PSIxNCIgcng9IjYiIGZpbGw9IiMwNzNCNjYiLz4KICAgIDwvZz4KICAgIAogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzgwLDIzMCkiPgogICAgICA8cmVjdCB4PSItOCIgeT0iMjAiIHdpZHRoPSIyNzYiIGhlaWdodD0iMTQwIiByeD0iMTQiIGZpbGw9IiMwNzNCNjYiIG9wYWNpdHk9IjAuMTIiLz4KICAgICAgPHJlY3QgeD0iMCIgeT0iMzAiIHdpZHRoPSIyNjAiIGhlaWdodD0iMTMwIiByeD0iMTYiIGZpbGw9IiNGRkZGRkYiLz4KICAgICAgPHJlY3QgeD0iMCIgeT0iNTUiIHdpZHRoPSIyNjAiIGhlaWdodD0iMTA1IiByeD0iMTQiIGZpbGw9IiMxRTlFNkIiLz4KICAgICAgPHJlY3QgeD0iMTQiIHk9IjE0IiB3aWR0aD0iODMuMiIgaGVpZ2h0PSIzMiIgcng9IjEyIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiMwNzNCNjYiIHN0cm9rZS1vcGFjaXR5PSIwLjA4Ii8+CiAgICAgIDxyZWN0IHg9IjE2Mi44IiB5PSIxNCIgd2lkdGg9IjgzLjIiIGhlaWdodD0iMzIiIHJ4PSIxMiIgZmlsbD0iI0ZGRkZGRiIgc3Ryb2tlPSIjMDczQjY2IiBzdHJva2Utb3BhY2l0eT0iMC4wOCIvPgogICAgICA8cmVjdCB4PSItNiIgeT0iMTQ4IiB3aWR0aD0iMjcyIiBoZWlnaHQ9IjE0IiByeD0iNiIgZmlsbD0iIzA3M0I2NiIvPgogICAgPC9nPgogICAgCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NDAsNDIwKSBzY2FsZSgxLjApIj4KICAgICAgPHBhdGggZD0iTSAtMTggMCBMIDE4IDAgTCAxMiAzNiBMIC0xMiAzNiBaIiBmaWxsPSIjQzk3QjRBIi8+CiAgICAgIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTYiIHJ4PSI0IiByeT0iMzQiIGZpbGw9IiMxNDZCNDkiIHRyYW5zZm9ybT0icm90YXRlKC0xOCkiLz4KICAgICAgPGVsbGlwc2UgY3g9IjAiIGN5PSItNiIgcng9IjQiIHJ5PSIzNCIgZmlsbD0iIzE0NkI0OSIgdHJhbnNmb3JtPSJyb3RhdGUoMCkiLz4KICAgICAgPGVsbGlwc2UgY3g9IjAiIGN5PSItNiIgcng9IjQiIHJ5PSIzNCIgZmlsbD0iIzE0NkI0OSIgdHJhbnNmb3JtPSJyb3RhdGUoMTgpIi8+CiAgICAgIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTYiIHJ4PSI0IiByeT0iMzAiIGZpbGw9IiMxNDZCNDkiIHRyYW5zZm9ybT0icm90YXRlKC0zMikiLz4KICAgICAgPGVsbGlwc2UgY3g9IjAiIGN5PSItNiIgcng9IjQiIHJ5PSIzMCIgZmlsbD0iIzE0NkI0OSIgdHJhbnNmb3JtPSJyb3RhdGUoMzIpIi8+CiAgICA8L2c+CiAgICA8ZWxsaXBzZSBjeD0iMzUwIiBjeT0iNDQwIiByeD0iMTUwLjAiIHJ5PSI0MC4wIiBmaWxsPSIjRkZGRkZGIi8+CiAgICA8L3N2Zz4=" alt="Double sharing hostel room"></div>
-        <div class="room-body">
-          <h3>Double Sharing</h3>
-          <p>Comfort and affordability, evenly balanced.</p>
-          <div class="price-row">
-            <div class="price-chip"><span class="amt">From ₹3,000</span><span class="lbl">Without Food</span></div>
-            <div class="price-chip food"><span class="amt">From ₹6,000</span><span class="lbl">With Food</span></div>
-          </div>
-          <ul class="incl">
-            <li><span class="chk">✓</span> Comfortable Beds</li>
-            <li><span class="chk">✓</span> Storage</li>
-            <li><span class="chk">✓</span> WiFi</li>
-            <li><span class="chk">✓</span> Food Optional (Add-on)</li>
-            <li><span class="chk">✓</span> Attached / Common Bathroom</li>
-          </ul>
-          <a href="#book" class="btn btn-outline btn-block">Check Availability</a>
-        </div>
-      </div>
-      <div class="room-card reveal">
-        <div class="room-img"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MDAgNTAwIiB3aWR0aD0iNzAwIiBoZWlnaHQ9IjUwMCI+PHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9IiNGRkZGRkYiLz4KICAgIDxyZWN0IHdpZHRoPSI3MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRTFGNkVDIi8+CiAgICAKICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ3MCwzMCkiPgogICAgICA8cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjE1MCIgcng9IjEwIiBmaWxsPSIjRTdGMUZBIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iOCIvPgogICAgICA8bGluZSB4MT0iODAuMCIgeTE9IjAiIHgyPSI4MC4wIiB5Mj0iMTUwIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iNiIvPgogICAgICA8bGluZSB4MT0iMCIgeTE9Ijc1LjAiIHgyPSIxNjAiIHkyPSI3NS4wIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iNiIvPgogICAgPC9nPgogICAgCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2MCwyMTApIj4KICAgICAgPHJlY3QgeD0iLTgiIHk9IjIwIiB3aWR0aD0iMzE2IiBoZWlnaHQ9IjE2MCIgcng9IjE0IiBmaWxsPSIjMDczQjY2IiBvcGFjaXR5PSIwLjEyIi8+CiAgICAgIDxyZWN0IHg9IjAiIHk9IjMwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjE1MCIgcng9IjE2IiBmaWxsPSIjRkZGRkZGIi8+CiAgICAgIDxyZWN0IHg9IjAiIHk9IjU1IiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjEyNSIgcng9IjE0IiBmaWxsPSIjMUU5RTZCIi8+CiAgICAgIDxyZWN0IHg9IjE0IiB5PSIxNCIgd2lkdGg9Ijk2LjAiIGhlaWdodD0iMzIiIHJ4PSIxMiIgZmlsbD0iI0ZGRkZGRiIgc3Ryb2tlPSIjMDczQjY2IiBzdHJva2Utb3BhY2l0eT0iMC4wOCIvPgogICAgICA8cmVjdCB4PSIxOTAuMCIgeT0iMTQiIHdpZHRoPSI5Ni4wIiBoZWlnaHQ9IjMyIiByeD0iMTIiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzA3M0I2NiIgc3Ryb2tlLW9wYWNpdHk9IjAuMDgiLz4KICAgICAgPHJlY3QgeD0iLTYiIHk9IjE2OCIgd2lkdGg9IjMxMiIgaGVpZ2h0PSIxNCIgcng9IjYiIGZpbGw9IiMwNzNCNjYiLz4KICAgIDwvZz4KICAgIDxyZWN0IHg9IjQyMCIgeT0iMjgwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEyMCIgcng9IjEyIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiMwNzNCNjYiIHN0cm9rZS1vcGFjaXR5PSIwLjE1IiBzdHJva2Utd2lkdGg9IjYiLz4KICAgIDxyZWN0IHg9IjQ0MCIgeT0iMjQwIiB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHJ4PSI4IiBmaWxsPSIjRTdGMUZBIi8+CiAgICAKICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY0MCw0NDApIHNjYWxlKDAuOSkiPgogICAgICA8cGF0aCBkPSJNIC0xOCAwIEwgMTggMCBMIDEyIDM2IEwgLTEyIDM2IFoiIGZpbGw9IiNDOTdCNEEiLz4KICAgICAgPGVsbGlwc2UgY3g9IjAiIGN5PSItNiIgcng9IjQiIHJ5PSIzNCIgZmlsbD0iIzE0NkI0OSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE4KSIvPgogICAgICA8ZWxsaXBzZSBjeD0iMCIgY3k9Ii02IiByeD0iNCIgcnk9IjM0IiBmaWxsPSIjMTQ2QjQ5IiB0cmFuc2Zvcm09InJvdGF0ZSgwKSIvPgogICAgICA8ZWxsaXBzZSBjeD0iMCIgY3k9Ii02IiByeD0iNCIgcnk9IjM0IiBmaWxsPSIjMTQ2QjQ5IiB0cmFuc2Zvcm09InJvdGF0ZSgxOCkiLz4KICAgICAgPGVsbGlwc2UgY3g9IjAiIGN5PSItNiIgcng9IjQiIHJ5PSIzMCIgZmlsbD0iIzE0NkI0OSIgdHJhbnNmb3JtPSJyb3RhdGUoLTMyKSIvPgogICAgICA8ZWxsaXBzZSBjeD0iMCIgY3k9Ii02IiByeD0iNCIgcnk9IjMwIiBmaWxsPSIjMTQ2QjQ5IiB0cmFuc2Zvcm09InJvdGF0ZSgzMikiLz4KICAgIDwvZz4KICAgIDwvc3ZnPg==" alt="Single sharing hostel room"></div>
+        <div class="room-img"><img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=700&auto=format&fit=crop" alt="Single sharing hostel room"></div>
         <div class="room-body">
           <h3>Single Sharing</h3>
           <p>Ideal for professionals seeking maximum privacy.</p>
-          <div class="price-row">
-            <div class="price-chip"><span class="amt">From ₹4,500</span><span class="lbl">Without Food</span></div>
-            <div class="price-chip food"><span class="amt">From ₹8,000</span><span class="lbl">With Food</span></div>
-          </div>
           <ul class="incl">
             <li><span class="chk">✓</span> Comfortable Bed</li>
             <li><span class="chk">✓</span> Storage Cupboard</li>
             <li><span class="chk">✓</span> Fan</li>
             <li><span class="chk">✓</span> WiFi</li>
-            <li><span class="chk">✓</span> Food Optional (Add-on)</li>
+            <li><span class="chk">✓</span> Food Included</li>
             <li><span class="chk">✓</span> Attached / Common Bathroom</li>
           </ul>
-          <a href="#book" class="btn btn-outline btn-block">Check Availability</a>
+          <a href="#book" class="btn btn-outline btn-block">Enquire for Price</a>
+        </div>
+      </div>
+      <div class="room-card popular reveal">
+        <span class="popular-tag">Most Popular</span>
+        <div class="room-img"><img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?q=80&w=700&auto=format&fit=crop" alt="Double sharing hostel room"></div>
+        <div class="room-body">
+          <h3>Double Sharing</h3>
+          <p>Comfort and affordability, evenly balanced.</p>
+          <ul class="incl">
+            <li><span class="chk">✓</span> Comfortable Beds</li>
+            <li><span class="chk">✓</span> Storage</li>
+            <li><span class="chk">✓</span> WiFi</li>
+            <li><span class="chk">✓</span> Food Included</li>
+            <li><span class="chk">✓</span> Attached / Common Bathroom</li>
+          </ul>
+          <a href="#book" class="btn btn-primary btn-block">Enquire for Price</a>
+        </div>
+      </div>
+      <div class="room-card reveal">
+        <div class="room-img"><img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=700&auto=format&fit=crop" alt="Triple sharing hostel room"></div>
+        <div class="room-body">
+          <h3>Triple Sharing</h3>
+          <p>Perfect for budget-conscious students.</p>
+          <ul class="incl">
+            <li><span class="chk">✓</span> Comfortable Beds</li>
+            <li><span class="chk">✓</span> Cupboard</li>
+            <li><span class="chk">✓</span> WiFi</li>
+            <li><span class="chk">✓</span> Food Included</li>
+            <li><span class="chk">✓</span> Attached / Common Bathroom</li>
+          </ul>
+          <a href="#book" class="btn btn-outline btn-block">Enquire for Price</a>
         </div>
       </div>
     </div>
-    <p class="price-note" style="text-align:center; margin-top:24px;">*Prices shown are starting rates per month and vary by hostel and room availability.</p>
   </div>
 </section>
 
@@ -641,9 +621,9 @@
 <section class="section" id="food">
   <div class="wrap food-grid">
     <div class="reveal">
-      <span class="eyebrow">Homely Food, Optional</span>
+      <span class="eyebrow">Homely Food, Daily</span>
       <h2>Enjoy fresh homely meals every day</h2>
-      <p>Add a food plan from ₹4,500/month — real food, cooked the way it is at home — because a long day at Infopark deserves a proper meal at the end of it.</p>
+      <p>Real food, cooked the way it is at home — because a long day at Infopark deserves a proper meal at the end of it.</p>
       <div class="food-meals">
         <div class="meal-pill"><div class="ic">🌅</div><strong>Breakfast</strong></div>
         <div class="meal-pill"><div class="ic">🍛</div><strong>Lunch</strong></div>
@@ -657,7 +637,7 @@
       </ul>
     </div>
     <div class="food-visual reveal">
-      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgOTAwIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjkwMCI+PHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9IiNGRkZGRkYiLz4KICAgIDxyZWN0IHdpZHRoPSI5MDAiIGhlaWdodD0iOTAwIiBmaWxsPSIjRjNFN0Q2IiBvcGFjaXR5PSIwLjUiLz4KICAgIDxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQ3MCIgcj0iMzIwIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiNFN0YxRkEiIHN0cm9rZS13aWR0aD0iMTgiLz4KICAgIDxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQ3MCIgcj0iMjUwIiBmaWxsPSIjRTFGNkVDIi8+CiAgICA8cGF0aCBkPSJNNDUwIDQ3MCBMNDUwIDIyMCBBMjUwIDI1MCAwIDAgMSA2NjYgMzQ1IFoiIGZpbGw9IiNFOEEzM0QiIG9wYWNpdHk9IjAuODUiLz4KICAgIDxwYXRoIGQ9Ik00NTAgNDcwIEw2NjYgMzQ1IEEyNTAgMjUwIDAgMCAxIDY2NiA1OTUgWiIgZmlsbD0iIzFFOUU2QiIgb3BhY2l0eT0iMC44NSIvPgogICAgPHBhdGggZD0iTTQ1MCA0NzAgTDY2NiA1OTUgQTI1MCAyNTAgMCAwIDEgNDUwIDcyMCBaIiBmaWxsPSIjQzk3QjRBIiBvcGFjaXR5PSIwLjg1Ii8+CiAgICA8cGF0aCBkPSJNNDUwIDQ3MCBMNDUwIDcyMCBBMjUwIDI1MCAwIDAgMSAyMzQgNTk1IFoiIGZpbGw9IiMwQjVGQTUiIG9wYWNpdHk9IjAuOCIvPgogICAgPGNpcmNsZSBjeD0iNDUwIiBjeT0iNDcwIiByPSI3MCIgZmlsbD0iI0ZGRkZGRiIvPgogICAgPGNpcmNsZSBjeD0iNDUwIiBjeT0iNDcwIiByPSI0NiIgZmlsbD0iI0YzRTdENiIvPgogICAgCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzODAsMTUwKSIgb3BhY2l0eT0iMC44NSI+CiAgICAgIDxwYXRoIGQ9Ik0wIDMwIEMgLTEwIDIwIC0xMCA4IDAgMCBDIDEwIDggMTAgMjAgMCAzMCBaIiBmaWxsPSIjRkZGRkZGIi8+CiAgICAgIDxwYXRoIGQ9Ik0yMiAzNCBDIDEyIDI0IDEyIDEyIDIyIDQgQyAzMiAxMiAzMiAyNCAyMiAzNCBaIiBmaWxsPSIjRkZGRkZGIi8+CiAgICAgIDxwYXRoIGQ9Ik0tMjIgMzQgQyAtMzIgMjQgLTMyIDEyIC0yMiA0IEMgLTEyIDEyIC0xMiAyNCAtMjIgMzQgWiIgZmlsbD0iI0ZGRkZGRiIvPgogICAgPC9nPgogICAgCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NTAsMTIwKSIgb3BhY2l0eT0iMC44NSI+CiAgICAgIDxwYXRoIGQ9Ik0wIDMwIEMgLTEwIDIwIC0xMCA4IDAgMCBDIDEwIDggMTAgMjAgMCAzMCBaIiBmaWxsPSIjRkZGRkZGIi8+CiAgICAgIDxwYXRoIGQ9Ik0yMiAzNCBDIDEyIDI0IDEyIDEyIDIyIDQgQyAzMiAxMiAzMiAyNCAyMiAzNCBaIiBmaWxsPSIjRkZGRkZGIi8+CiAgICAgIDxwYXRoIGQ9Ik0tMjIgMzQgQyAtMzIgMjQgLTMyIDEyIC0yMiA0IEMgLTEyIDEyIC0xMiAyNCAtMjIgMzQgWiIgZmlsbD0iI0ZGRkZGRiIvPgogICAgPC9nPgogICAgCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MjAsMTUwKSIgb3BhY2l0eT0iMC44NSI+CiAgICAgIDxwYXRoIGQ9Ik0wIDMwIEMgLTEwIDIwIC0xMCA4IDAgMCBDIDEwIDggMTAgMjAgMCAzMCBaIiBmaWxsPSIjRkZGRkZGIi8+CiAgICAgIDxwYXRoIGQ9Ik0yMiAzNCBDIDEyIDI0IDEyIDEyIDIyIDQgQyAzMiAxMiAzMiAyNCAyMiAzNCBaIiBmaWxsPSIjRkZGRkZGIi8+CiAgICAgIDxwYXRoIGQ9Ik0tMjIgMzQgQyAtMzIgMjQgLTMyIDEyIC0yMiA0IEMgLTEyIDEyIC0xMiAyNCAtMjIgMzQgWiIgZmlsbD0iI0ZGRkZGRiIvPgogICAgPC9nPgogICAgPC9zdmc+" alt="Homely South Indian meal served at the hostel">
+      <img src="https://images.unsplash.com/photo-1604908554007-4e7461d70fcf?q=80&w=900&auto=format&fit=crop" alt="Homely South Indian meal served at the hostel">
     </div>
   </div>
 </section>
@@ -687,46 +667,46 @@
 </section>
 
 <!-- GALLERY -->
-<!-- <section class="section" id="gallery">
+<section class="section" id="gallery">
   <div class="wrap">
     <div class="section-head center reveal">
       <span class="eyebrow">Gallery</span>
-      <h2>A look inside our hostels</h2>
+      <h2>A look inside Koodu</h2>
     </div>
     <div class="gallery-grid reveal">
-      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgNjUwIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjY1MCI+PHJlY3Qgd2lkdGg9IjUwMCIgaGVpZ2h0PSI2NTAiIGZpbGw9IiNGRkZGRkYiLz4KICAgIDxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNjUwIiBmaWxsPSIjRTdGMUZBIi8+CiAgICAKICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMxMCw0MCkiPgogICAgICA8cmVjdCB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE2MCIgcng9IjEwIiBmaWxsPSIjRTdGMUZBIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iOCIvPgogICAgICA8bGluZSB4MT0iNzUuMCIgeTE9IjAiIHgyPSI3NS4wIiB5Mj0iMTYwIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iNiIvPgogICAgICA8bGluZSB4MT0iMCIgeTE9IjgwLjAiIHgyPSIxNTAiIHkyPSI4MC4wIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iNiIvPgogICAgPC9nPgogICAgCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MCwzMDApIj4KICAgICAgPHJlY3QgeD0iLTgiIHk9IjIwIiB3aWR0aD0iMzE2IiBoZWlnaHQ9IjE4MCIgcng9IjE0IiBmaWxsPSIjMDczQjY2IiBvcGFjaXR5PSIwLjEyIi8+CiAgICAgIDxyZWN0IHg9IjAiIHk9IjMwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjE3MCIgcng9IjE2IiBmaWxsPSIjRkZGRkZGIi8+CiAgICAgIDxyZWN0IHg9IjAiIHk9IjU1IiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjE0NSIgcng9IjE0IiBmaWxsPSIjMUU5RTZCIi8+CiAgICAgIDxyZWN0IHg9IjE0IiB5PSIxNCIgd2lkdGg9Ijk2LjAiIGhlaWdodD0iMzIiIHJ4PSIxMiIgZmlsbD0iI0ZGRkZGRiIgc3Ryb2tlPSIjMDczQjY2IiBzdHJva2Utb3BhY2l0eT0iMC4wOCIvPgogICAgICA8cmVjdCB4PSIxOTAuMCIgeT0iMTQiIHdpZHRoPSI5Ni4wIiBoZWlnaHQ9IjMyIiByeD0iMTIiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzA3M0I2NiIgc3Ryb2tlLW9wYWNpdHk9IjAuMDgiLz4KICAgICAgPHJlY3QgeD0iLTYiIHk9IjE4OCIgd2lkdGg9IjMxMiIgaGVpZ2h0PSIxNCIgcng9IjYiIGZpbGw9IiMwNzNCNjYiLz4KICAgIDwvZz4KICAgIAogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDMwLDU2MCkgc2NhbGUoMS4wKSI+CiAgICAgIDxwYXRoIGQ9Ik0gLTE4IDAgTCAxOCAwIEwgMTIgMzYgTCAtMTIgMzYgWiIgZmlsbD0iI0M5N0I0QSIvPgogICAgICA8ZWxsaXBzZSBjeD0iMCIgY3k9Ii02IiByeD0iNCIgcnk9IjM0IiBmaWxsPSIjMTQ2QjQ5IiB0cmFuc2Zvcm09InJvdGF0ZSgtMTgpIi8+CiAgICAgIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTYiIHJ4PSI0IiByeT0iMzQiIGZpbGw9IiMxNDZCNDkiIHRyYW5zZm9ybT0icm90YXRlKDApIi8+CiAgICAgIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTYiIHJ4PSI0IiByeT0iMzQiIGZpbGw9IiMxNDZCNDkiIHRyYW5zZm9ybT0icm90YXRlKDE4KSIvPgogICAgICA8ZWxsaXBzZSBjeD0iMCIgY3k9Ii02IiByeD0iNCIgcnk9IjMwIiBmaWxsPSIjMTQ2QjQ5IiB0cmFuc2Zvcm09InJvdGF0ZSgtMzIpIi8+CiAgICAgIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTYiIHJ4PSI0IiByeT0iMzAiIGZpbGw9IiMxNDZCNDkiIHRyYW5zZm9ybT0icm90YXRlKDMyKSIvPgogICAgPC9nPgogICAgPC9zdmc+" alt="Hostel bedroom">
-      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgNjAwIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjYwMCI+PHJlY3Qgd2lkdGg9IjUwMCIgaGVpZ2h0PSI2MDAiIGZpbGw9IiNGRkZGRkYiLz4KICAgIDxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNjAwIiBmaWxsPSIjRTFGNkVDIi8+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNDAsNDApIj48cmVjdCB4PSItMTAiIHk9Ii0xMCIgd2lkdGg9IjI0MCIgaGVpZ2h0PSIyNDAiIHJ4PSIxOCIgZmlsbD0iIzA3M0I2NiIgb3BhY2l0eT0iMC4wNyIvPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwwKSI+CiAgICAgIDxyZWN0IHg9Ii04IiB5PSIyMCIgd2lkdGg9IjIzNiIgaGVpZ2h0PSI5MCIgcng9IjE0IiBmaWxsPSIjMDczQjY2IiBvcGFjaXR5PSIwLjEyIi8+CiAgICAgIDxyZWN0IHg9IjAiIHk9IjMwIiB3aWR0aD0iMjIwIiBoZWlnaHQ9IjgwIiByeD0iMTYiIGZpbGw9IiNGRkZGRkYiLz4KICAgICAgPHJlY3QgeD0iMCIgeT0iNTUiIHdpZHRoPSIyMjAiIGhlaWdodD0iNTUiIHJ4PSIxNCIgZmlsbD0iIzBCNUZBNSIvPgogICAgICA8cmVjdCB4PSIxNCIgeT0iMTQiIHdpZHRoPSI3MC40IiBoZWlnaHQ9IjMyIiByeD0iMTIiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzA3M0I2NiIgc3Ryb2tlLW9wYWNpdHk9IjAuMDgiLz4KICAgICAgPHJlY3QgeD0iMTM1LjYiIHk9IjE0IiB3aWR0aD0iNzAuNCIgaGVpZ2h0PSIzMiIgcng9IjEyIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiMwNzNCNjYiIHN0cm9rZS1vcGFjaXR5PSIwLjA4Ii8+CiAgICAgIDxyZWN0IHg9Ii02IiB5PSI5OCIgd2lkdGg9IjIzMiIgaGVpZ2h0PSIxNCIgcng9IjYiIGZpbGw9IiMwNzNCNjYiLz4KICAgIDwvZz4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsMTEwKSI+CiAgICAgIDxyZWN0IHg9Ii04IiB5PSIyMCIgd2lkdGg9IjIzNiIgaGVpZ2h0PSI5MCIgcng9IjE0IiBmaWxsPSIjMDczQjY2IiBvcGFjaXR5PSIwLjEyIi8+CiAgICAgIDxyZWN0IHg9IjAiIHk9IjMwIiB3aWR0aD0iMjIwIiBoZWlnaHQ9IjgwIiByeD0iMTYiIGZpbGw9IiNGRkZGRkYiLz4KICAgICAgPHJlY3QgeD0iMCIgeT0iNTUiIHdpZHRoPSIyMjAiIGhlaWdodD0iNTUiIHJ4PSIxNCIgZmlsbD0iIzE0NkI0OSIvPgogICAgICA8cmVjdCB4PSIxNCIgeT0iMTQiIHdpZHRoPSI3MC40IiBoZWlnaHQ9IjMyIiByeD0iMTIiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzA3M0I2NiIgc3Ryb2tlLW9wYWNpdHk9IjAuMDgiLz4KICAgICAgPHJlY3QgeD0iMTM1LjYiIHk9IjE0IiB3aWR0aD0iNzAuNCIgaGVpZ2h0PSIzMiIgcng9IjEyIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiMwNzNCNjYiIHN0cm9rZS1vcGFjaXR5PSIwLjA4Ii8+CiAgICAgIDxyZWN0IHg9Ii02IiB5PSI5OCIgd2lkdGg9IjIzMiIgaGVpZ2h0PSIxNCIgcng9IjYiIGZpbGw9IiMwNzNCNjYiLz4KICAgIDwvZz48L2c+CiAgICAKICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYwLDUwMCkgc2NhbGUoMC45KSI+CiAgICAgIDxwYXRoIGQ9Ik0gLTE4IDAgTCAxOCAwIEwgMTIgMzYgTCAtMTIgMzYgWiIgZmlsbD0iI0M5N0I0QSIvPgogICAgICA8ZWxsaXBzZSBjeD0iMCIgY3k9Ii02IiByeD0iNCIgcnk9IjM0IiBmaWxsPSIjMTQ2QjQ5IiB0cmFuc2Zvcm09InJvdGF0ZSgtMTgpIi8+CiAgICAgIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTYiIHJ4PSI0IiByeT0iMzQiIGZpbGw9IiMxNDZCNDkiIHRyYW5zZm9ybT0icm90YXRlKDApIi8+CiAgICAgIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTYiIHJ4PSI0IiByeT0iMzQiIGZpbGw9IiMxNDZCNDkiIHRyYW5zZm9ybT0icm90YXRlKDE4KSIvPgogICAgICA8ZWxsaXBzZSBjeD0iMCIgY3k9Ii02IiByeD0iNCIgcnk9IjMwIiBmaWxsPSIjMTQ2QjQ5IiB0cmFuc2Zvcm09InJvdGF0ZSgtMzIpIi8+CiAgICAgIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTYiIHJ4PSI0IiByeT0iMzAiIGZpbGw9IiMxNDZCNDkiIHRyYW5zZm9ybT0icm90YXRlKDMyKSIvPgogICAgPC9nPgogICAgPGVsbGlwc2UgY3g9IjMzMCIgY3k9IjUyMCIgcng9IjE0MC4wIiByeT0iMzUuMCIgZmlsbD0iI0ZGRkZGRiIvPgogICAgPC9zdmc+" alt="Hostel bedroom interior">
-      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgNTUwIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjU1MCI+PHJlY3Qgd2lkdGg9IjUwMCIgaGVpZ2h0PSI1NTAiIGZpbGw9IiNGRkZGRkYiLz4KICAgIDxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTUwIiBmaWxsPSIjRjNFN0Q2IiBvcGFjaXR5PSIwLjUiLz4KICAgIDxjaXJjbGUgY3g9IjI1MCIgY3k9IjI3MCIgcj0iMTkwIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiNFMUY2RUMiIHN0cm9rZS13aWR0aD0iMTYiLz4KICAgIDxjaXJjbGUgY3g9IjI1MCIgY3k9IjI3MCIgcj0iMTQwIiBmaWxsPSIjRTdGMUZBIi8+CiAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIyNzAiIHI9IjYwIiBmaWxsPSIjRThBMzNEIiBvcGFjaXR5PSIwLjg1Ii8+CiAgICA8Y2lyY2xlIGN4PSIxODAiIGN5PSIyMjAiIHI9IjI2IiBmaWxsPSIjMUU5RTZCIiBvcGFjaXR5PSIwLjg1Ii8+CiAgICA8Y2lyY2xlIGN4PSIzMjAiIGN5PSIyMjAiIHI9IjI2IiBmaWxsPSIjQzk3QjRBIiBvcGFjaXR5PSIwLjg1Ii8+CiAgICA8Y2lyY2xlIGN4PSIxOTAiIGN5PSIzMzAiIHI9IjIyIiBmaWxsPSIjMEI1RkE1IiBvcGFjaXR5PSIwLjgiLz4KICAgIDxjaXJjbGUgY3g9IjMxMCIgY3k9IjMzMCIgcj0iMjIiIGZpbGw9IiMxNDZCNDkiIG9wYWNpdHk9IjAuOCIvPgogICAgPC9zdmc+" alt="Homely food served">
-      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgNjIwIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjYyMCI+PHJlY3Qgd2lkdGg9IjUwMCIgaGVpZ2h0PSI2MjAiIGZpbGw9IiNGRkZGRkYiLz4KICAgIDxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNjIwIiBmaWxsPSIjRTdGMUZBIi8+CiAgICA8cmVjdCB4PSI2MCIgeT0iMzYwIiB3aWR0aD0iMzgwIiBoZWlnaHQ9IjI2IiByeD0iMTAiIGZpbGw9IiNGRkZGRkYiLz4KICAgIDxyZWN0IHg9IjgwIiB5PSIzODYiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNDAiIGZpbGw9IiMwNzNCNjYiIG9wYWNpdHk9IjAuNSIvPgogICAgPHJlY3QgeD0iNDA2IiB5PSIzODYiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNDAiIGZpbGw9IiMwNzNCNjYiIG9wYWNpdHk9IjAuNSIvPgogICAgPGNpcmNsZSBjeD0iMTYwIiBjeT0iMzQ1IiByPSIyNCIgZmlsbD0iI0ZGRkZGRiIgc3Ryb2tlPSIjRTFGNkVDIiBzdHJva2Utd2lkdGg9IjYiLz4KICAgIDxjaXJjbGUgY3g9IjI1MCIgY3k9IjM0NSIgcj0iMjQiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iI0UxRjZFQyIgc3Ryb2tlLXdpZHRoPSI2Ii8+CiAgICA8Y2lyY2xlIGN4PSIzNDAiIGN5PSIzNDUiIHI9IjI0IiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiNFMUY2RUMiIHN0cm9rZS13aWR0aD0iNiIvPgogICAgCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NDAsNTIwKSBzY2FsZSgwLjkpIj4KICAgICAgPHBhdGggZD0iTSAtMTggMCBMIDE4IDAgTCAxMiAzNiBMIC0xMiAzNiBaIiBmaWxsPSIjQzk3QjRBIi8+CiAgICAgIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTYiIHJ4PSI0IiByeT0iMzQiIGZpbGw9IiMxNDZCNDkiIHRyYW5zZm9ybT0icm90YXRlKC0xOCkiLz4KICAgICAgPGVsbGlwc2UgY3g9IjAiIGN5PSItNiIgcng9IjQiIHJ5PSIzNCIgZmlsbD0iIzE0NkI0OSIgdHJhbnNmb3JtPSJyb3RhdGUoMCkiLz4KICAgICAgPGVsbGlwc2UgY3g9IjAiIGN5PSItNiIgcng9IjQiIHJ5PSIzNCIgZmlsbD0iIzE0NkI0OSIgdHJhbnNmb3JtPSJyb3RhdGUoMTgpIi8+CiAgICAgIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTYiIHJ4PSI0IiByeT0iMzAiIGZpbGw9IiMxNDZCNDkiIHRyYW5zZm9ybT0icm90YXRlKC0zMikiLz4KICAgICAgPGVsbGlwc2UgY3g9IjAiIGN5PSItNiIgcng9IjQiIHJ5PSIzMCIgZmlsbD0iIzE0NkI0OSIgdHJhbnNmb3JtPSJyb3RhdGUoMzIpIi8+CiAgICA8L2c+CiAgICA8cmVjdCB4PSI0MCIgeT0iNTAwIiB3aWR0aD0iNjAiIGhlaWdodD0iODAiIHJ4PSIxMCIgZmlsbD0iIzFFOUU2QiIgb3BhY2l0eT0iMC41Ii8+CiAgICA8cmVjdCB4PSIxMjAiIHk9IjUwMCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjgwIiByeD0iMTAiIGZpbGw9IiMwQjVGQTUiIG9wYWNpdHk9IjAuNCIvPgogICAgPC9zdmc+" alt="Dining area">
-      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgNjgwIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjY4MCI+PHJlY3Qgd2lkdGg9IjUwMCIgaGVpZ2h0PSI2ODAiIGZpbGw9IiNGRkZGRkYiLz4KICAgIDxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNjgwIiBmaWxsPSIjRTdGMUZBIi8+CiAgICA8cmVjdCB4PSIwIiB5PSI1MDAiIHdpZHRoPSI1MDAiIGhlaWdodD0iMTgwIiBmaWxsPSIjRTFGNkVDIi8+CiAgICA8cmVjdCB4PSI4MCIgeT0iMTYwIiB3aWR0aD0iMzQwIiBoZWlnaHQ9IjM4MCIgcng9IjEwIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiMwNzNCNjYiIHN0cm9rZS1vcGFjaXR5PSIwLjEyIiBzdHJva2Utd2lkdGg9IjgiLz4KICAgIAogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIwLDIxMCkiPgogICAgICA8cmVjdCB3aWR0aD0iOTAiIGhlaWdodD0iOTAiIHJ4PSIxMCIgZmlsbD0iI0U3RjFGQSIgc3Ryb2tlPSIjMDczQjY2IiBzdHJva2Utd2lkdGg9IjgiLz4KICAgICAgPGxpbmUgeDE9IjQ1LjAiIHkxPSIwIiB4Mj0iNDUuMCIgeTI9IjkwIiBzdHJva2U9IiMwNzNCNjYiIHN0cm9rZS13aWR0aD0iNiIvPgogICAgICA8bGluZSB4MT0iMCIgeTE9IjQ1LjAiIHgyPSI5MCIgeTI9IjQ1LjAiIHN0cm9rZT0iIzA3M0I2NiIgc3Ryb2tlLXdpZHRoPSI2Ii8+CiAgICA8L2c+CiAgICAKICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI0MCwyMTApIj4KICAgICAgPHJlY3Qgd2lkdGg9IjkwIiBoZWlnaHQ9IjkwIiByeD0iMTAiIGZpbGw9IiNFN0YxRkEiIHN0cm9rZT0iIzA3M0I2NiIgc3Ryb2tlLXdpZHRoPSI4Ii8+CiAgICAgIDxsaW5lIHgxPSI0NS4wIiB5MT0iMCIgeDI9IjQ1LjAiIHkyPSI5MCIgc3Ryb2tlPSIjMDczQjY2IiBzdHJva2Utd2lkdGg9IjYiLz4KICAgICAgPGxpbmUgeDE9IjAiIHkxPSI0NS4wIiB4Mj0iOTAiIHkyPSI0NS4wIiBzdHJva2U9IiMwNzNCNjYiIHN0cm9rZS13aWR0aD0iNiIvPgogICAgPC9nPgogICAgCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjAsMzMwKSI+CiAgICAgIDxyZWN0IHdpZHRoPSI5MCIgaGVpZ2h0PSI5MCIgcng9IjEwIiBmaWxsPSIjRTFGNkVDIiBzdHJva2U9IiMwNzNCNjYiIHN0cm9rZS13aWR0aD0iOCIvPgogICAgICA8bGluZSB4MT0iNDUuMCIgeTE9IjAiIHgyPSI0NS4wIiB5Mj0iOTAiIHN0cm9rZT0iIzA3M0I2NiIgc3Ryb2tlLXdpZHRoPSI2Ii8+CiAgICAgIDxsaW5lIHgxPSIwIiB5MT0iNDUuMCIgeDI9IjkwIiB5Mj0iNDUuMCIgc3Ryb2tlPSIjMDczQjY2IiBzdHJva2Utd2lkdGg9IjYiLz4KICAgIDwvZz4KICAgIAogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjQwLDMzMCkiPgogICAgICA8cmVjdCB3aWR0aD0iOTAiIGhlaWdodD0iOTAiIHJ4PSIxMCIgZmlsbD0iI0UxRjZFQyIgc3Ryb2tlPSIjMDczQjY2IiBzdHJva2Utd2lkdGg9IjgiLz4KICAgICAgPGxpbmUgeDE9IjQ1LjAiIHkxPSIwIiB4Mj0iNDUuMCIgeTI9IjkwIiBzdHJva2U9IiMwNzNCNjYiIHN0cm9rZS13aWR0aD0iNiIvPgogICAgICA8bGluZSB4MT0iMCIgeTE9IjQ1LjAiIHgyPSI5MCIgeTI9IjQ1LjAiIHN0cm9rZT0iIzA3M0I2NiIgc3Ryb2tlLXdpZHRoPSI2Ii8+CiAgICA8L2c+CiAgICA8cmVjdCB4PSIyMjAiIHk9IjQ2MCIgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiByeD0iNiIgZmlsbD0iIzE0NkI0OSIvPgogICAgCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MjAsNTYwKSBzY2FsZSgxLjIpIj4KICAgICAgPHBhdGggZD0iTSAtMTggMCBMIDE4IDAgTCAxMiAzNiBMIC0xMiAzNiBaIiBmaWxsPSIjQzk3QjRBIi8+CiAgICAgIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTYiIHJ4PSI0IiByeT0iMzQiIGZpbGw9IiMxNDZCNDkiIHRyYW5zZm9ybT0icm90YXRlKC0xOCkiLz4KICAgICAgPGVsbGlwc2UgY3g9IjAiIGN5PSItNiIgcng9IjQiIHJ5PSIzNCIgZmlsbD0iIzE0NkI0OSIgdHJhbnNmb3JtPSJyb3RhdGUoMCkiLz4KICAgICAgPGVsbGlwc2UgY3g9IjAiIGN5PSItNiIgcng9IjQiIHJ5PSIzNCIgZmlsbD0iIzE0NkI0OSIgdHJhbnNmb3JtPSJyb3RhdGUoMTgpIi8+CiAgICAgIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTYiIHJ4PSI0IiByeT0iMzAiIGZpbGw9IiMxNDZCNDkiIHRyYW5zZm9ybT0icm90YXRlKC0zMikiLz4KICAgICAgPGVsbGlwc2UgY3g9IjAiIGN5PSItNiIgcng9IjQiIHJ5PSIzMCIgZmlsbD0iIzE0NkI0OSIgdHJhbnNmb3JtPSJyb3RhdGUoMzIpIi8+CiAgICA8L2c+CiAgICAKICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcwLDU2MCkgc2NhbGUoMS4wKSI+CiAgICAgIDxwYXRoIGQ9Ik0gLTE4IDAgTCAxOCAwIEwgMTIgMzYgTCAtMTIgMzYgWiIgZmlsbD0iI0M5N0I0QSIvPgogICAgICA8ZWxsaXBzZSBjeD0iMCIgY3k9Ii02IiByeD0iNCIgcnk9IjM0IiBmaWxsPSIjMTQ2QjQ5IiB0cmFuc2Zvcm09InJvdGF0ZSgtMTgpIi8+CiAgICAgIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTYiIHJ4PSI0IiByeT0iMzQiIGZpbGw9IiMxNDZCNDkiIHRyYW5zZm9ybT0icm90YXRlKDApIi8+CiAgICAgIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTYiIHJ4PSI0IiByeT0iMzQiIGZpbGw9IiMxNDZCNDkiIHRyYW5zZm9ybT0icm90YXRlKDE4KSIvPgogICAgICA8ZWxsaXBzZSBjeD0iMCIgY3k9Ii02IiByeD0iNCIgcnk9IjMwIiBmaWxsPSIjMTQ2QjQ5IiB0cmFuc2Zvcm09InJvdGF0ZSgtMzIpIi8+CiAgICAgIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTYiIHJ4PSI0IiByeT0iMzAiIGZpbGw9IiMxNDZCNDkiIHRyYW5zZm9ybT0icm90YXRlKDMyKSIvPgogICAgPC9nPgogICAgPC9zdmc+" alt="Building exterior">
-      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgNTYwIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjU2MCI+PHJlY3Qgd2lkdGg9IjUwMCIgaGVpZ2h0PSI1NjAiIGZpbGw9IiNGRkZGRkYiLz4KICAgIDxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTYwIiBmaWxsPSIjRTFGNkVDIi8+CiAgICA8cmVjdCB4PSI0MCIgeT0iMzQwIiB3aWR0aD0iNDIwIiBoZWlnaHQ9IjE2MCIgcng9IjE0IiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiMwNzNCNjYiIHN0cm9rZS1vcGFjaXR5PSIwLjEyIiBzdHJva2Utd2lkdGg9IjYiLz4KICAgIDxyZWN0IHg9IjcwIiB5PSIyODAiIHdpZHRoPSIxMDAiIGhlaWdodD0iODAiIHJ4PSIxMCIgZmlsbD0iIzA3M0I2NiIgb3BhY2l0eT0iMC44NSIvPgogICAgPGNpcmNsZSBjeD0iMTAwIiBjeT0iMzAwIiByPSIxNCIgZmlsbD0iI0U4QTMzRCIvPgogICAgPGNpcmNsZSBjeD0iMTQwIiBjeT0iMzAwIiByPSIxNCIgZmlsbD0iI0M5N0I0QSIvPgogICAgPHJlY3QgeD0iMjIwIiB5PSIyNTAiIHdpZHRoPSIyMjAiIGhlaWdodD0iMjAiIHJ4PSI4IiBmaWxsPSIjRTdGMUZBIi8+CiAgICA8cmVjdCB4PSIyNDAiIHk9IjE5MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjYwIiByeD0iNiIgZmlsbD0iIzFFOUU2QiIvPgogICAgPHJlY3QgeD0iMzAwIiB5PSIxOTAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI2MCIgcng9IjYiIGZpbGw9IiNDOTdCNEEiLz4KICAgIDxyZWN0IHg9IjM2MCIgeT0iMTkwIiB3aWR0aD0iNDAiIGhlaWdodD0iNjAiIHJ4PSI2IiBmaWxsPSIjMEI1RkE1Ii8+CiAgICA8L3N2Zz4=" alt="Hostel kitchen">
-      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgNjQwIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjY0MCI+PHJlY3Qgd2lkdGg9IjUwMCIgaGVpZ2h0PSI2NDAiIGZpbGw9IiNGRkZGRkYiLz4KICAgIDxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNjQwIiBmaWxsPSIjRTdGMUZBIi8+CiAgICA8cG9seWdvbiBwb2ludHM9IjAsNjQwIDE4MCwyNjAgMzIwLDI2MCA1MDAsNjQwIiBmaWxsPSIjRkZGRkZGIi8+CiAgICA8cG9seWdvbiBwb2ludHM9IjE4MCwyNjAgMzIwLDI2MCAzMDAsNjQwIDIwMCw2NDAiIGZpbGw9IiNFMUY2RUMiLz4KICAgIDxyZWN0IHg9IjQwIiB5PSIzODAiIHdpZHRoPSI5MCIgaGVpZ2h0PSIxNjAiIHJ4PSI2IiBmaWxsPSIjMDczQjY2IiBvcGFjaXR5PSIwLjE4Ii8+CiAgICA8cmVjdCB4PSIzNzAiIHk9IjM4MCIgd2lkdGg9IjkwIiBoZWlnaHQ9IjE2MCIgcng9IjYiIGZpbGw9IiMwNzNCNjYiIG9wYWNpdHk9IjAuMTgiLz4KICAgIDxjaXJjbGUgY3g9IjI1MCIgY3k9IjIyMCIgcj0iMjAiIGZpbGw9IiNFOEEzM0QiIG9wYWNpdHk9IjAuOCIvPgogICAgPGNpcmNsZSBjeD0iMTYwIiBjeT0iMzAwIiByPSIxNCIgZmlsbD0iI0U4QTMzRCIgb3BhY2l0eT0iMC42Ii8+CiAgICA8Y2lyY2xlIGN4PSIzNDAiIGN5PSIzMDAiIHI9IjE0IiBmaWxsPSIjRThBMzNEIiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==" alt="Common corridor">
-      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgNTgwIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjU4MCI+PHJlY3Qgd2lkdGg9IjUwMCIgaGVpZ2h0PSI1ODAiIGZpbGw9IiNGRkZGRkYiLz4KICAgIDxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTgwIiBmaWxsPSIjRTFGNkVDIi8+CiAgICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM4MCIgZmlsbD0iI0U3RjFGQSIvPgogICAgPHJlY3QgeD0iMTIwIiB5PSIxMjAiIHdpZHRoPSIyNjAiIGhlaWdodD0iMTgwIiByeD0iMTQiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzA3M0I2NiIgc3Ryb2tlLW9wYWNpdHk9IjAuMTIiIHN0cm9rZS13aWR0aD0iNiIvPgogICAgPHJlY3QgeD0iMTUwIiB5PSIzMjAiIHdpZHRoPSIyMDAiIGhlaWdodD0iNjAiIHJ4PSIyMCIgZmlsbD0iI0ZGRkZGRiIgc3Ryb2tlPSIjMDczQjY2IiBzdHJva2Utb3BhY2l0eT0iMC4xNSIgc3Ryb2tlLXdpZHRoPSI2Ii8+CiAgICA8cmVjdCB4PSIyMjAiIHk9IjI4MCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjQwIiByeD0iMTAiIGZpbGw9IiMwQjVGQTUiIG9wYWNpdHk9IjAuNiIvPgogICAgPGNpcmNsZSBjeD0iMjUwIiBjeT0iMjEwIiByPSIzIiBmaWxsPSIjMEIxRjJBIiBvcGFjaXR5PSIwLjE1Ii8+CiAgICA8L3N2Zz4=" alt="Washroom">
+      <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=500&auto=format&fit=crop" alt="Hostel bedroom">
+      <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?q=80&w=500&auto=format&fit=crop" alt="Hostel bedroom interior">
+      <img src="https://images.unsplash.com/photo-1604908554007-4e7461d70fcf?q=80&w=500&auto=format&fit=crop" alt="Homely food served">
+      <img src="https://images.unsplash.com/photo-1556909114-44e3e9699e2b?q=80&w=500&auto=format&fit=crop" alt="Dining area">
+      <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=500&auto=format&fit=crop" alt="Building exterior">
+      <img src="https://images.unsplash.com/photo-1521783988139-89397d761dce?q=80&w=500&auto=format&fit=crop" alt="Hostel kitchen">
+      <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=500&auto=format&fit=crop" alt="Common corridor">
+      <img src="https://images.unsplash.com/photo-1564540583246-934409427776?q=80&w=500&auto=format&fit=crop" alt="Washroom">
     </div>
   </div>
-</section> -->
+</section>
 
 <!-- TESTIMONIALS -->
 <section class="section section-soft" id="reviews">
   <div class="wrap">
     <div class="section-head center reveal">
       <span class="eyebrow">Testimonials</span>
-      <h2>What people say about Stay Kakkanad</h2>
+      <h2>What residents say about Koodu</h2>
     </div>
     <div class="testi-row">
       <div class="testi-card reveal">
         <div class="stars">★★★★★</div>
-        <p>"I moved to Kakkanad for my first job. Stay Kakkanad found me an affordable hostel within a day — delicious food, peaceful atmosphere, no broker fee."</p>
+        <p>"I moved to Kakkanad for my first job. Affordable rent, delicious food, and a peaceful atmosphere."</p>
         <div class="testi-who"><div class="testi-avatar">S</div><div><strong>Sachin R.</strong><span>Software Engineer</span></div></div>
       </div>
       <div class="testi-card reveal">
         <div class="stars">★★★★★</div>
-        <p>"Very close to Infopark. The rooms are clean, the food is excellent, and the whole process was free and hassle-free."</p>
+        <p>"Very close to Infopark. The rooms are clean, the food is excellent, and the management is supportive."</p>
         <div class="testi-who"><div class="testi-avatar">A</div><div><strong>Anjali M.</strong><span>Working Professional</span></div></div>
       </div>
       <div class="testi-card reveal">
         <div class="stars">★★★★★</div>
-        <p>"I called Stay Kakkanad unsure where to stay. They matched me with a budget-friendly hostel that felt like home — comfortable and affordable."</p>
+        <p>"The perfect hostel for students. Budget-friendly and comfortable — feels like home."</p>
         <div class="testi-who"><div class="testi-avatar">N</div><div><strong>Nikhil P.</strong><span>College Student</span></div></div>
       </div>
     </div>
@@ -741,45 +721,37 @@
       <h2>Frequently asked questions</h2>
     </div>
     <div class="faq-list reveal">
-      <!-- <div class="faq-item">
-        <div class="faq-q"><h3>Do I have to pay Stay Kakkanad anything to use this service?</h3><span class="plus">+</span></div>
-        <div class="faq-a"><p>No. Finding and booking a hostel through Stay Kakkanad is completely free for you — we're paid by our partner hostels, not by you.</p></div>
-      </div> -->
-      <div class="faq-item">
-        <div class="faq-q"><h3>How much does it cost?</h3><span class="plus">+</span></div>
-        <div class="faq-a"><p>Rent without food starts from ₹2,000/month, and plans with homely food included start from ₹4,500/month. Exact pricing depends on the hostel and sharing type.</p></div>
-      </div>
       <div class="faq-item">
         <div class="faq-q"><h3>Is food included?</h3><span class="plus">+</span></div>
-        <div class="faq-a"><p>Food is optional — you can choose a room-only plan or add breakfast, lunch and dinner with a food plan starting from ₹4,500/month.</p></div>
+        <div class="faq-a"><p>Yes — breakfast, lunch and dinner are included with every room type at Koodu Hostel.</p></div>
       </div>
       <div class="faq-item">
         <div class="faq-q"><h3>Do you have separate hostels for Men and Ladies?</h3><span class="plus">+</span></div>
-        <div class="faq-a"><p>Yes, every hostel in our network — including our own property in Mavelipuram — has fully separate accommodation for Men and Ladies, each with CCTV surveillance.</p></div>
+        <div class="faq-a"><p>Yes, we maintain fully separate accommodation blocks and entrances for Men and Ladies, each with CCTV surveillance.</p></div>
       </div>
       <div class="faq-item">
         <div class="faq-q"><h3>Is WiFi available?</h3><span class="plus">+</span></div>
-        <div class="faq-a"><p>Yes, high-speed WiFi is available at our hostels, ideal for remote work and online classes.</p></div>
+        <div class="faq-a"><p>Yes, high-speed WiFi is available throughout the hostel, ideal for remote work and online classes.</p></div>
       </div>
       <div class="faq-item">
         <div class="faq-q"><h3>Can working professionals stay?</h3><span class="plus">+</span></div>
-        <div class="faq-a"><p>Absolutely — we host a mix of students, interns, freshers and working professionals from Infopark, SmartCity and CSEZ.</p></div>
+        <div class="faq-a"><p>Absolutely — Koodu is home to a mix of students, interns, freshers and working professionals from Infopark, SmartCity and CSEZ.</p></div>
       </div>
       <div class="faq-item">
         <div class="faq-q"><h3>Is bike parking available?</h3><span class="plus">+</span></div>
-        <div class="faq-a"><p>Yes, secure bike parking is available free of cost at our hostels.</p></div>
+        <div class="faq-a"><p>Yes, secure on-site bike parking is available free of cost for all residents.</p></div>
       </div>
       <div class="faq-item">
         <div class="faq-q"><h3>How much is the security deposit?</h3><span class="plus">+</span></div>
-        <div class="faq-a"><p>Deposit amounts vary by hostel, room type and duration of stay — share your details in the enquiry form and our team will confirm within 15 minutes.</p></div>
+        <div class="faq-a"><p>Deposit amounts vary by room type and duration of stay — share your details in the booking form and our team will confirm within 15 minutes.</p></div>
       </div>
       <div class="faq-item">
         <div class="faq-q"><h3>Can I move in immediately?</h3><span class="plus">+</span></div>
-        <div class="faq-a"><p>Yes, immediate occupancy is available at several of our partner hostels — move in today with a simple booking process.</p></div>
+        <div class="faq-a"><p>Yes, immediate occupancy is available — move in today with a simple booking process.</p></div>
       </div>
       <div class="faq-item">
         <div class="faq-q"><h3>How far is Infopark?</h3><span class="plus">+</span></div>
-        <div class="faq-a"><p>Our hostel in Mavelipuram is approximately 7 minutes away from Infopark Phase 1 by bike, and most of our partner hostels are within a similar distance.</p></div>
+        <div class="faq-a"><p>Infopark Phase 1 is approximately 7 minutes away by bike, making Koodu one of the most conveniently located hostels in Kakkanad.</p></div>
       </div>
     </div>
   </div>
@@ -790,12 +762,12 @@
   <div class="wrap">
     <div class="booking reveal">
       <div class="booking-info">
-        <span class="eyebrow">Find My Hostel</span>
-        <h2>Tell us what you need, we'll find your hostel</h2>
-        <p>Fill in your details below and our team will match you with the right hostel in Kakkanad — usually within 15 minutes. The service is completely free for you.</p>
+        <span class="eyebrow">Book Your Bed</span>
+        <h2>Reserve your spot at Koodu, Kakkanad</h2>
+        <p>Fill in your details below and our team will reach out to confirm bed availability — usually within 15 minutes.</p>
         <ul class="booking-trust">
           <li><span class="ic">⚡</span> Response within 15 minutes</li>
-          <li><span class="ic">🆓</span> 100% free, no hidden charges</li>
+          <li><span class="ic">🔒</span> No spam, no hidden charges</li>
           <li><span class="ic">🏠</span> Immediate move-in available</li>
         </ul>
       </div>
@@ -820,29 +792,24 @@
             </div>
             <div class="field"><label for="room">Preferred Room</label>
               <select id="room">
-                <option>Four Sharing</option><option>Double Sharing</option><option>Single Sharing</option>
-              </select>
-            </div>
-            <div class="field"><label for="foodplan">Food Plan</label>
-              <select id="foodplan">
-                <option>Without Food — from ₹2,000/month</option><option>With Food — from ₹4,500/month</option>
+                <option>Single Sharing</option><option>Double Sharing</option><option>Triple Sharing</option>
               </select>
             </div>
             <div class="field"><label for="movein">Expected Move-in Date</label><input type="date" id="movein"></div>
-            <div class="field full"><label for="duration">Duration of Stay</label>
+            <div class="field"><label for="duration">Duration of Stay</label>
               <select id="duration">
                 <option>1–3 Months</option><option>3–6 Months</option><option>6–12 Months</option><option>12+ Months</option>
               </select>
             </div>
             <div class="field full"><label for="notes">Special Requirements</label><textarea id="notes" rows="3" placeholder="Anything else we should know?"></textarea></div>
           </div>
-          <button type="submit" class="btn btn-primary btn-block">Find My Hostel</button>
+          <button type="submit" class="btn btn-primary btn-block">Book My Bed</button>
           <p class="form-note">We'll contact you within 15 minutes to confirm availability.</p>
         </form>
         <div class="form-success" id="formSuccess">
           <div class="ic">✓</div>
           <h3>Thank you, your request is in!</h3>
-          <p>Our team will call or WhatsApp you within 15 minutes with the best matching hostel options.</p>
+          <p>Our team will call or WhatsApp you within 15 minutes to confirm bed availability.</p>
         </div>
       </div>
     </div>
@@ -854,18 +821,18 @@
   <div class="wrap contact-grid">
     <div class="reveal">
       <span class="eyebrow">Contact Us</span>
-      <h2>Visit us in Mavelipuram, Kakkanad</h2>
-      <p>Have a question or want help finding the right hostel? Reach out — we're happy to help, free of charge.</p>
+      <h2>Find us in Mavelipuram, Kakkanad</h2>
+      <p>Have a question before booking? Reach out — we're happy to help.</p>
       <div class="contact-list">
         <div class="contact-row"><div class="ic">📞</div><div><strong>+91 98765 43210</strong><span>Phone</span></div></div>
         <div class="contact-row"><div class="ic">💬</div><div><strong>+91 98765 43210</strong><span>WhatsApp</span></div></div>
-        <div class="contact-row"><div class="ic">✉️</div><div><strong>stay@staykakkanad.in</strong><span>Email</span></div></div>
-        <div class="contact-row"><div class="ic">📍</div><div><strong>Mavelipuram, Kakkanad</strong><span>Our flagship hostel · Kochi, Kerala</span></div></div>
+        <div class="contact-row"><div class="ic">✉️</div><div><strong>stay@kooduhostel.in</strong><span>Email</span></div></div>
+        <div class="contact-row"><div class="ic">📍</div><div><strong>Mavelipuram, Kakkanad</strong><span>Kochi, Kerala</span></div></div>
       </div>
       <a href="https://maps.google.com/?q=Mavelipuram,Kakkanad,Kochi,Kerala" target="_blank" class="btn btn-outline" style="margin-top:24px;">Get Directions</a>
     </div>
     <div class="map-frame reveal">
-      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNzIwIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjcyMCI+PHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI3MjAiIGZpbGw9IiNFMUY2RUMiLz48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjcyMCIgZmlsbD0iI0UxRjZFQyIvPjxyZWN0IHg9IjAiIHk9IjE0MCIgd2lkdGg9IjkwMCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHg9IjAiIHk9IjI4MCIgd2lkdGg9IjkwMCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHg9IjAiIHk9IjQyMCIgd2lkdGg9IjkwMCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHg9IjAiIHk9IjU2MCIgd2lkdGg9IjkwMCIgaGVpZ2h0PSIxNCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHg9IjE1MCIgeT0iMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjcyMCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHg9IjMwMCIgeT0iMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjcyMCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHg9IjQ1MCIgeT0iMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjcyMCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHg9IjYwMCIgeT0iMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjcyMCIgZmlsbD0iI0ZGRkZGRiIvPjxyZWN0IHg9Ijc1MCIgeT0iMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjcyMCIgZmlsbD0iI0ZGRkZGRiIvPgogICAgPHJlY3QgeD0iNjAiIHk9IjQwIiB3aWR0aD0iMTcwIiBoZWlnaHQ9IjkwIiByeD0iMTAiIGZpbGw9IiMwQjVGQTUiIG9wYWNpdHk9IjAuMTgiLz4KICAgIDxyZWN0IHg9IjMyMCIgeT0iMTcwIiB3aWR0aD0iMTcwIiBoZWlnaHQ9IjkwIiByeD0iMTAiIGZpbGw9IiMxRTlFNkIiIG9wYWNpdHk9IjAuMjIiLz4KICAgIDxyZWN0IHg9IjYwMCIgeT0iNjAiIHdpZHRoPSIxNzAiIGhlaWdodD0iOTAiIHJ4PSIxMCIgZmlsbD0iIzBCNUZBNSIgb3BhY2l0eT0iMC4xOCIvPgogICAgPHJlY3QgeD0iNjAiIHk9IjQyMCIgd2lkdGg9IjE3MCIgaGVpZ2h0PSI5MCIgcng9IjEwIiBmaWxsPSIjMUU5RTZCIiBvcGFjaXR5PSIwLjIyIi8+CiAgICA8cmVjdCB4PSI2MDAiIHk9IjUwMCIgd2lkdGg9IjE3MCIgaGVpZ2h0PSI5MCIgcng9IjEwIiBmaWxsPSIjMEI1RkE1IiBvcGFjaXR5PSIwLjE4Ii8+CiAgICAKICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ1MCwzNjApIj4KICAgICAgPGNpcmNsZSByPSI2MCIgZmlsbD0iIzA3M0I2NiIgb3BhY2l0eT0iMC4xMiIvPgogICAgICA8cGF0aCBkPSJNMCAtNTYgQyAzNCAtNTYgNTQgLTMwIDU0IC0yIEMgNTQgMzggMCA3MCAwIDcwIEMgMCA3MCAtNTQgMzggLTU0IC0yIEMgLTU0IC0zMCAtMzQgLTU2IDAgLTU2IFoiIGZpbGw9IiMxRTlFNkIiLz4KICAgICAgPGNpcmNsZSByPSIyMCIgZmlsbD0iI0ZGRkZGRiIvPgogICAgPC9nPjwvc3ZnPg==" alt="Map area near Kakkanad, Kochi">
+      <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=900&auto=format&fit=crop" alt="Map area near Kakkanad, Kochi">
       <div class="map-pin-overlay"><div class="pulse"></div></div>
     </div>
   </div>
@@ -876,15 +843,15 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="footer-logo"><div class="logo-mark">க</div>Stay Kakkanad</div>
-        <p style="color:rgba(255,255,255,0.65); font-size:14px; max-width:280px;">Free hostel-finding service for Kakkanad, plus our own Men's &amp; Ladies' Hostel in Mavelipuram — rent from ₹2,000/month, food plans from ₹4,500/month.</p>
+        <div class="footer-logo"><div class="logo-mark">க</div>Koodu Hostel</div>
+        <p style="color:rgba(255,255,255,0.65); font-size:14px; max-width:280px;">Affordable Men's &amp; Ladies' Hostel in Mavelipuram, Kakkanad with homely food included — built for the Infopark crowd.</p>
       </div>
       <div>
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="#rooms">Pricing</a></li>
+          <li><a href="#rooms">Rooms</a></li>
           <li><a href="#why">Facilities</a></li>
-          <!-- <li><a href="#gallery">Gallery</a></li> -->
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -900,14 +867,14 @@
         <h4>Get In Touch</h4>
         <ul>
           <li><a href="tel:+919876543210">+91 98765 43210</a></li>
-          <li><a href="mailto:stay@staykakkanad.in">stay@staykakkanad.in</a></li>
-          <li><a href="#book">Find My Hostel</a></li>
+          <li><a href="mailto:stay@kooduhostel.in">stay@kooduhostel.in</a></li>
+          <li><a href="#book">Book Your Bed</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Stay Kakkanad. All Rights Reserved.</span>
-      <span>Men's &amp; Ladies' Hostel Finder in Kakkanad · Near Infopark, SmartCity &amp; CSEZ</span>
+      <span>© 2026 Koodu Hostel. All Rights Reserved.</span>
+      <span>Men's &amp; Ladies' Hostel in Kakkanad · Near Infopark, SmartCity &amp; CSEZ</span>
     </div>
   </div>
 </footer>
@@ -920,7 +887,7 @@
 
 <div class="sticky-mobile-cta">
   <a href="tel:+919876543210" class="btn btn-outline btn-sm">📞 Call</a>
-  <a href="#book" class="btn btn-primary btn-sm">Find Hostel</a>
+  <a href="#book" class="btn btn-primary btn-sm">Book Now</a>
 </div>
 
 <script>
