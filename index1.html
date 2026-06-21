@@ -1,1 +1,447 @@
+<!DOCTYPE html>
 
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lumina Hostel | Premium Men's &amp; Ladies' Co-Living in Kakkanad</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "lumina-ink": "#1A1A1A",
+                        "lumina-blue": "#2563EB",
+                        "fresh-mint": "#10B981",
+                        "canvas-white": "#FAFAFA",
+                        "border-color": "#E5E7EB",
+                        "text-muted": "#6B7280"
+                    },
+                    "fontFamily": {
+                        "sans-serif": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Inter", "sans-serif"]
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "sm": "0px",
+                        "md": "4px",
+                        "lg": "4px",
+                        "xl": "4px",
+                        "2xl": "4px",
+                        "3xl": "4px",
+                        "full": "4px"
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.canvas-white');
+            color: theme('colors.lumina-ink');
+            font-family: theme('fontFamily.body');
+        }
+        
+        h1, h2, h3, h4, h5, h6, .display-font {
+            font-family: theme('fontFamily.sans-serif');
+            letter-spacing: -0.03em;
+        }
+
+        .ledger-border {
+            border-right: 1px solid theme('colors.border-color');
+        }
+        
+        .ledger-border-b {
+            border-bottom: 1px solid theme('colors.border-color');
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Input overrides for sharp aesthetic */
+        input[type="text"], input[type="tel"], input[type="date"], select {
+            border-radius: 4px !important;
+            border: 1px solid theme('colors.border-color') !important;
+            background-color: transparent !important;
+        }
+        
+        input:focus, select:focus {
+            outline: none !important;
+            border-color: theme('colors.lumina-ink') !important;
+            box-shadow: none !important;
+        }
+
+        .btn-primary {
+            background-color: theme('colors.lumina-ink');
+            color: white;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        .btn-primary:hover {
+            background-color: theme('colors.lumina-blue');
+        }
+        
+        .btn-outline {
+            border: 1px solid theme('colors.lumina-ink');
+            color: theme('colors.lumina-ink');
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        .btn-outline:hover {
+            background-color: theme('colors.lumina-ink');
+            color: white;
+        }
+
+        /* Shader background setup */
+        #shader-canvas-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+            opacity: 0.8;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden selection:bg-lumina-blue selection:text-white">
+<div class="max-w-[1440px] mx-auto border-x border-border-color min-h-screen relative bg-canvas-white shadow-2xl shadow-black/5">
+<!-- Top Navigation -->
+<header class="border-b border-border-color bg-canvas-white/90 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-stretch h-20">
+<!-- Logo Section -->
+<div class="flex-shrink-0 flex items-center px-8 border-r border-border-color min-w-[280px]">
+<img alt="Lumina Hostel Logo" class="h-10 object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLuQm-uthYquzTOskGpTCGGozv2ceoAhJ890GW74kVzD3hKtwRgwrHkldifdtizAYRceG7JxQdgkbnvpDP5lxX0yc2-1vKCSdmdS8QgyAGzHfy9HotcqAuCiYtGWSlgn8tNtu3p1I2s6daMlTYt62x6INMVhDVoFeJOsRkVr8HrKn1i5uDJqBmK1IMCQvCqnu4ynbzn7ozONt6cCuda5MlOaP0mDMXIobEdAjGSkBWlbopm8UGzqLiJJ"/>
+</div>
+<!-- Nav Links -->
+<nav class="hidden md:flex flex-grow items-center px-8 gap-8">
+<a class="text-sm font-semibold tracking-wide text-text-muted hover:text-lumina-ink transition-colors uppercase" href="#rooms">Rooms</a>
+<a class="text-sm font-semibold tracking-wide text-text-muted hover:text-lumina-ink transition-colors uppercase" href="#facilities">Facilities</a>
+<a class="text-sm font-semibold tracking-wide text-text-muted hover:text-lumina-ink transition-colors uppercase" href="#food">Dining</a>
+</nav>
+<!-- Action Section -->
+<div class="hidden md:flex flex-shrink-0 items-center px-8 border-l border-border-color">
+<button class="btn-primary px-8 py-3 text-sm tracking-wide uppercase">Book Space</button>
+</div>
+</div>
+</header>
+<!-- Mobile Bottom Nav -->
+<div class="fixed bottom-0 left-0 w-full flex justify-stretch items-center bg-canvas-white border-t border-border-color z-50 md:hidden pb-safe">
+<a class="flex-1 flex flex-col items-center justify-center py-3 border-r border-border-color text-text-muted hover:bg-gray-50 transition-colors" href="tel:+910000000000">
+<span class="material-symbols-outlined text-xl mb-1">call</span>
+<span class="text-[10px] font-semibold uppercase tracking-wider">Call</span>
+</a>
+<a class="flex-1 flex flex-col items-center justify-center py-3 border-r border-border-color text-text-muted hover:bg-gray-50 transition-colors" href="https://wa.me/910000000000">
+<span class="material-symbols-outlined text-xl mb-1">chat</span>
+<span class="text-[10px] font-semibold uppercase tracking-wider">Chat</span>
+</a>
+<button class="flex-[2] bg-lumina-ink text-white py-3 flex items-center justify-center gap-2 font-semibold text-xs uppercase tracking-wider h-full hover:bg-lumina-blue transition-colors">
+<span class="material-symbols-outlined text-lg">calendar_month</span>
+Book Now
+</button>
+</div>
+<!-- Hero Section -->
+<main class="grid grid-cols-1 lg:grid-cols-[1fr_400px] border-b border-border-color">
+<!-- Main Content -->
+<div class="relative p-8 md:p-16 lg:p-24 lg:border-r border-border-color flex flex-col justify-center min-h-[80vh] overflow-hidden">
+<!-- Background Shader -->
+<div id="shader-canvas-container">
+<!-- Fallback background if shader fails to load or placeholder not found -->
+<div class="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-emerald-50/20"></div>
+</div>
+<div class="relative z-10 fade-up">
+<div class="inline-flex items-center gap-2 px-3 py-1 border border-lumina-ink/20 rounded-sm mb-8 bg-white/50 backdrop-blur-sm">
+<span class="w-2 h-2 bg-lumina-blue rounded-full"></span>
+<span class="text-xs font-bold uppercase tracking-wider text-lumina-ink">Kakkanad, Kochi</span>
+</div>
+<h1 class="display-font text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[0.95] text-lumina-ink mb-8">
+                    Premium Co-Living <br/>
+<span class="text-text-muted font-light italic">Next to Infopark.</span>
+</h1>
+<p class="text-lg md:text-xl text-text-muted max-w-xl mb-12 font-medium leading-relaxed">
+                    Purpose-built accommodation for IT professionals. uncompromising quality, seamless connectivity, and exceptional dining included.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="btn-primary px-10 py-4 text-sm tracking-wide uppercase shadow-sm">Reserve Your Spot</button>
+<button class="btn-outline px-10 py-4 text-sm tracking-wide uppercase bg-white/50 backdrop-blur-sm">Schedule Tour</button>
+</div>
+</div>
+</div>
+<!-- Booking Sidebar -->
+<div class="bg-white p-8 md:p-12 lg:p-10 flex flex-col justify-center relative hidden md:flex">
+<div class="absolute top-0 right-0 w-32 h-32 bg-lumina-blue/5 rounded-full blur-3xl -mr-10 -mt-10"></div>
+<div class="relative z-10 fade-up" style="transition-delay: 0.2s;">
+<h3 class="display-font text-2xl font-bold mb-2">Secure Application</h3>
+<p class="text-sm text-text-muted mb-8 border-b border-border-color pb-4">Immediate availability check for prime units.</p>
+<form class="space-y-5">
+<div class="space-y-4">
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-lumina-ink mb-1.5">Full Name</label>
+<input class="w-full px-4 py-3" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-lumina-ink mb-1.5">Contact Number</label>
+<input class="w-full px-4 py-3" placeholder="+91" type="tel"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-lumina-ink mb-1.5">Preference</label>
+<select class="w-full px-4 py-3">
+<option>Men's Unit</option>
+<option>Ladies' Unit</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-lumina-ink mb-1.5">Configuration</label>
+<select class="w-full px-4 py-3">
+<option>Private</option>
+<option>Twin Share</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-lumina-ink mb-1.5">Target Move-in</label>
+<input class="w-full px-4 py-3" type="date"/>
+</div>
+</div>
+<button class="w-full btn-primary py-4 mt-6 text-sm uppercase tracking-wide" type="submit">Verify Availability</button>
+</form>
+</div>
+</div>
+</main>
+<!-- Facilities Grid -->
+<section class="border-b border-border-color" id="facilities">
+<div class="grid grid-cols-1 lg:grid-cols-12">
+<div class="lg:col-span-4 p-8 md:p-16 lg:border-r border-border-color bg-gray-50 flex flex-col justify-center fade-up">
+<h2 class="display-font text-4xl md:text-5xl font-bold mb-6 leading-tight">Engineered <br/>for Productivity.</h2>
+<p class="text-text-muted font-medium">Every detail optimized for the modern IT professional lifestyle in Kochi. Proximity as a utility.</p>
+</div>
+<div class="lg:col-span-8 grid grid-cols-2 md:grid-cols-3">
+<!-- Spec 1 -->
+<div class="p-8 border-b border-r border-border-color flex flex-col facility-item fade-up" style="transition-delay: 0.1s;">
+<div class="w-12 h-12 bg-white border border-border-color rounded-sm flex items-center justify-center mb-6 text-lumina-ink">
+<span class="material-symbols-outlined">wifi_tethering</span>
+</div>
+<h3 class="font-bold text-lg mb-2 display-font">Enterprise WiFi</h3>
+<p class="text-sm text-text-muted">Dedicated lease lines ensuring uninterrupted remote work.</p>
+</div>
+<!-- Spec 2 -->
+<div class="p-8 border-b md:border-r border-border-color flex flex-col facility-item fade-up" style="transition-delay: 0.2s;">
+<div class="w-12 h-12 bg-white border border-border-color rounded-sm flex items-center justify-center mb-6 text-lumina-ink">
+<span class="material-symbols-outlined">location_city</span>
+</div>
+<h3 class="font-bold text-lg mb-2 display-font">Zero Commute</h3>
+<p class="text-sm text-text-muted">Strategic location adjacent to major Infopark gates.</p>
+</div>
+<!-- Spec 3 -->
+<div class="p-8 border-b border-r md:border-r-0 border-border-color flex flex-col facility-item fade-up" style="transition-delay: 0.3s;">
+<div class="w-12 h-12 bg-white border border-border-color rounded-sm flex items-center justify-center mb-6 text-lumina-ink">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<h3 class="font-bold text-lg mb-2 display-font">Secure Access</h3>
+<p class="text-sm text-text-muted">Biometric entry and 24/7 comprehensive CCTV coverage.</p>
+</div>
+<!-- Spec 4 -->
+<div class="p-8 border-b md:border-b-0 border-r border-border-color flex flex-col facility-item fade-up" style="transition-delay: 0.4s;">
+<div class="w-12 h-12 bg-white border border-border-color rounded-sm flex items-center justify-center mb-6 text-fresh-mint">
+<span class="material-symbols-outlined">restaurant</span>
+</div>
+<h3 class="font-bold text-lg mb-2 display-font">Curated Dining</h3>
+<p class="text-sm text-text-muted">Premium daily meals prepared in our hygienic commercial kitchen.</p>
+</div>
+<!-- Spec 5 -->
+<div class="p-8 border-b md:border-b-0 border-r border-border-color flex flex-col facility-item fade-up" style="transition-delay: 0.5s;">
+<div class="w-12 h-12 bg-white border border-border-color rounded-sm flex items-center justify-center mb-6 text-lumina-ink">
+<span class="material-symbols-outlined">local_laundry_service</span>
+</div>
+<h3 class="font-bold text-lg mb-2 display-font">Housekeeping</h3>
+<p class="text-sm text-text-muted">Scheduled professional cleaning and laundry utility access.</p>
+</div>
+<!-- Spec 6 -->
+<div class="p-8 bg-lumina-ink text-white flex flex-col justify-center items-start facility-item fade-up" style="transition-delay: 0.6s;">
+<h3 class="font-bold text-xl mb-4 display-font">View Full Spec Sheet</h3>
+<button class="flex items-center gap-2 text-sm uppercase tracking-wider font-bold hover:text-lumina-blue transition-colors">
+                            Download PDF <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- The Room Menu (Pricing Grid) -->
+<section class="border-b border-border-color" id="rooms">
+<div class="p-8 md:p-16 border-b border-border-color fade-up">
+<h2 class="display-font text-4xl md:text-5xl font-bold mb-4">Configuration Specs.</h2>
+<p class="text-text-muted font-medium max-w-2xl">Transparent pricing. All units include high-speed internet, housekeeping, and premium daily dining options.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3">
+<!-- Config 1 -->
+<div class="p-8 md:p-12 border-b md:border-b-0 border-r border-border-color hover:bg-gray-50 transition-colors group fade-up">
+<div class="text-sm font-bold uppercase tracking-wider text-text-muted mb-8">Base Spec</div>
+<h3 class="display-font text-3xl font-bold mb-2">Triple Share</h3>
+<div class="text-4xl font-extrabold mb-8 text-lumina-ink flex items-end gap-1">
+<span class="text-xl text-text-muted mb-1">₹</span>6,500 <span class="text-sm text-text-muted font-normal mb-1">/mo</span>
+</div>
+<ul class="space-y-4 mb-12 border-t border-border-color pt-8">
+<li class="flex items-start gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-lumina-ink text-lg shrink-0">check</span> Spacious 3-bed layout
+                            </li>
+<li class="flex items-start gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-lumina-ink text-lg shrink-0">check</span> Individual wardrobe &amp; desk
+                            </li>
+<li class="flex items-start gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-lumina-ink text-lg shrink-0">check</span> Attached washroom
+                            </li>
+</ul>
+<button class="w-full btn-outline py-3 text-sm uppercase tracking-wide group-hover:bg-lumina-ink group-hover:text-white">Select Spec</button>
+</div>
+<!-- Config 2 -->
+<div class="p-8 md:p-12 border-b md:border-b-0 border-r border-border-color relative bg-lumina-ink text-white fade-up" style="transition-delay: 0.1s;">
+<div class="absolute top-0 right-8 bg-lumina-blue text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-b-sm">Optimal Value</div>
+<div class="text-sm font-bold uppercase tracking-wider text-gray-400 mb-8">Standard Spec</div>
+<h3 class="display-font text-3xl font-bold mb-2 text-white">Twin Share</h3>
+<div class="text-4xl font-extrabold mb-8 text-white flex items-end gap-1">
+<span class="text-xl text-gray-400 mb-1">₹</span>8,500 <span class="text-sm text-gray-400 font-normal mb-1">/mo</span>
+</div>
+<ul class="space-y-4 mb-12 border-t border-gray-800 pt-8">
+<li class="flex items-start gap-3 text-sm font-medium text-gray-300">
+<span class="material-symbols-outlined text-lumina-blue text-lg shrink-0">check</span> Premium 2-bed layout
+                            </li>
+<li class="flex items-start gap-3 text-sm font-medium text-gray-300">
+<span class="material-symbols-outlined text-lumina-blue text-lg shrink-0">check</span> Upgraded workstation area
+                            </li>
+<li class="flex items-start gap-3 text-sm font-medium text-gray-300">
+<span class="material-symbols-outlined text-lumina-blue text-lg shrink-0">check</span> Premium mattress included
+                            </li>
+</ul>
+<button class="w-full py-3 text-sm uppercase tracking-wide font-bold bg-white text-lumina-ink hover:bg-gray-100 transition-colors rounded-sm">Select Spec</button>
+</div>
+<!-- Config 3 -->
+<div class="p-8 md:p-12 hover:bg-gray-50 transition-colors group fade-up" style="transition-delay: 0.2s;">
+<div class="text-sm font-bold uppercase tracking-wider text-text-muted mb-8">Premium Spec</div>
+<h3 class="display-font text-3xl font-bold mb-2">Private Unit</h3>
+<div class="text-4xl font-extrabold mb-8 text-lumina-ink flex items-end gap-1">
+<span class="text-xl text-text-muted mb-1">₹</span>12,000 <span class="text-sm text-text-muted font-normal mb-1">/mo</span>
+</div>
+<ul class="space-y-4 mb-12 border-t border-border-color pt-8">
+<li class="flex items-start gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-lumina-ink text-lg shrink-0">check</span> Complete privacy
+                            </li>
+<li class="flex items-start gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-lumina-ink text-lg shrink-0">check</span> Executive workstation
+                            </li>
+<li class="flex items-start gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-lumina-ink text-lg shrink-0">check</span> Mini-fridge included
+                            </li>
+</ul>
+<button class="w-full btn-outline py-3 text-sm uppercase tracking-wide group-hover:bg-lumina-ink group-hover:text-white">Select Spec</button>
+</div>
+</div>
+</section>
+<!-- Food Section (Asymmetric Layout) -->
+<section class="grid grid-cols-1 lg:grid-cols-2" id="food">
+<div class="p-8 md:p-16 lg:p-24 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-border-color order-2 lg:order-1 fade-up">
+<div class="inline-block border border-fresh-mint text-fresh-mint text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-sm mb-6 w-max">Included in Base Rent</div>
+<h2 class="display-font text-4xl md:text-5xl font-bold mb-6 text-lumina-ink">Culinary Excellence.</h2>
+<p class="text-lg text-text-muted mb-10 font-medium">A professional kitchen delivering high-quality, nutritious meals daily. Designed to eliminate the stress of food prep for busy professionals.</p>
+<div class="space-y-8 border-l-2 border-border-color pl-6">
+<div>
+<h4 class="text-sm font-bold uppercase tracking-wider text-lumina-ink mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-fresh-mint text-sm">sunny</span> Morning Service
+                            </h4>
+<p class="text-text-muted text-sm font-medium">Robust breakfast spread featuring traditional Kerala staples and continental options.</p>
+</div>
+<div>
+<h4 class="text-sm font-bold uppercase tracking-wider text-lumina-ink mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-fresh-mint text-sm">restaurant_menu</span> Main Services
+                            </h4>
+<p class="text-text-muted text-sm font-medium">Substantial lunch and dinner offerings. Rotating menu of North and South Indian cuisine with dedicated Veg/Non-Veg prep areas.</p>
+</div>
+</div>
+</div>
+<div class="relative min-h-[400px] lg:min-h-auto order-1 lg:order-2 filter grayscale hover:grayscale-0 transition-all duration-700 fade-up" style="transition-delay: 0.2s;">
+<img alt="Professional catering presentation" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7EF9goKMtFL1hezUpNtThvLBqOmELW-3EhRk-odjQUq7FoyDgP_pcuvvy5lG1Gn5B6O3I9iI6ZiD5m4EN2_hf_I2MPD5SgA2u31mGz56rhdJCKDMlHudglZwPBs5caphmkfygX1uO8YXCTsd_wR2T8plaUQzDkQ8Bvp3QGr6RaPhcxeA2kRdjJUCrMOPQWnU5XV8-8s4WHAAkuCsoCHt8SgGHTRMPM_fj30qgPsZREu1VbB2iR4CvRd5NEI7f5KTYfjttySceqg"/>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-lumina-ink text-white border-t-4 border-lumina-blue">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-b border-gray-800">
+<div class="p-8 md:p-12 border-b md:border-b-0 md:border-r border-gray-800 flex flex-col justify-between">
+<div>
+<img alt="Lumina Logo Light" class="h-8 object-contain mb-6 filter brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AP1WRLuQm-uthYquzTOskGpTCGGozv2ceoAhJ890GW74kVzD3hKtwRgwrHkldifdtizAYRceG7JxQdgkbnvpDP5lxX0yc2-1vKCSdmdS8QgyAGzHfy9HotcqAuCiYtGWSlgn8tNtu3p1I2s6daMlTYt62x6INMVhDVoFeJOsRkVr8HrKn1i5uDJqBmK1IMCQvCqnu4ynbzn7ozONt6cCuda5MlOaP0mDMXIobEdAjGSkBWlbopm8UGzqLiJJ"/>
+<p class="text-gray-400 text-sm font-medium">Premium co-living infrastructure in Kakkanad.</p>
+</div>
+</div>
+<div class="p-8 md:p-12 border-b md:border-b-0 md:border-r border-gray-800">
+<h4 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-6">Navigation</h4>
+<ul class="space-y-3">
+<li><a class="text-sm font-medium text-gray-300 hover:text-white transition-colors" href="#rooms">Configuration Specs</a></li>
+<li><a class="text-sm font-medium text-gray-300 hover:text-white transition-colors" href="#facilities">Facility Overview</a></li>
+<li><a class="text-sm font-medium text-gray-300 hover:text-white transition-colors" href="#food">Dining Program</a></li>
+</ul>
+</div>
+<div class="p-8 md:p-12 border-b lg:border-b-0 lg:border-r border-gray-800">
+<h4 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-6">Contact Control</h4>
+<ul class="space-y-4 text-sm font-medium text-gray-300">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-lumina-blue text-lg">location_on</span> 
+                                Mavelipuram, Kakkanad<br/>Kochi, Kerala
+                            </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-lumina-blue text-lg">call</span> 
+                                +91 98765 43210
+                            </li>
+</ul>
+</div>
+<div class="p-8 md:p-12 flex items-center justify-center bg-lumina-blue/10">
+<button class="btn-primary w-full py-4 text-sm uppercase tracking-wide bg-lumina-blue hover:bg-blue-700">Apply for Tenancy</button>
+</div>
+</div>
+<div class="p-6 text-center lg:text-left flex flex-col lg:flex-row justify-between items-center px-8 md:px-12 text-xs font-bold uppercase tracking-wider text-gray-600">
+<p>© 2024 Lumina Hostel infrastructure. All rights reserved.</p>
+<div class="mt-4 lg:mt-0 space-x-4">
+<a class="hover:text-gray-300 transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-gray-300 transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</div> <!-- End max-w wrapper -->
+<script>
+        // Intersection Observer for staggered fade-up animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        // Optional: stop observing once animated
+                        // observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all elements with .fade-up
+            document.querySelectorAll('.fade-up').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body></html>
